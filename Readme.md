@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Serhii Repetiuk](https://up.htmlacademy.ru/htmlcss/26/user/547245).
-* Наставник: `Неизвестно`.
+* Наставник: `Кирилл Генералов`, `https://htmlacademy.ru/profile/hifull`.
 
 ---
 
