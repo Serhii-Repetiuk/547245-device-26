@@ -1,12 +1,177 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Девайс</title>
+</head>
+<body>
+<header>
+  <a href="index.html">
+    <img src="img/device.svg" alt="«Логотип магазина Девайс»" width="163" height="35">
+  </a>
+  <nav>
+    <ul>
+      <li><a href="catalog.html">Каталог товаров</a></li>
+      <li><a href="#">Доставка</a></li>
+      <li><a href="#">Гарантия</a></li>
+      <li><a href="#">Контакты</a></li>
+    </ul>
+    <ul class="header-user-activity">
+      <li>
+        <button class="modal-login" type="button">Войти</button>
+        <span class="modal-close"></span>
+      </li>
+      <!--Здесь будет форма-->
+      <li><a href="#">Сравнить</a></li>
+      <li>
+        <button type="button">Корзина</button>
+      </li>
+    </ul>
+    <input type="search" value="Поиск по сайту" alt="Поле поиска">
+  </nav>
+</header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+<main class="container">
+  <h1 class="visually-hidden">Главная страница сайта Девайс</h1>
+  <a href="catalog.html">
+    <img src="img/slider-1-png.png" alt="Изображение товара «Палка для сэлфи»" width="184" height="286">
+    <!--Картинку увеличить 384х486-->
+  </a>
+  <!--<span class="white-decorative-line"></span>-->
+  <h2 class="visually-hidden">Палка для сэлфи</h2>
+  <ul class="catalog-item-description">
+    <li>Делай селфи, <br>
+      как Бен Стиллер!
+    </li>
+    <li>Самая длинная палка для селфи доступна в нашем магазине.
+      Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+    </li>
+    <li><a href="#">Подробнее</a></li>
+    <li>8,5 м <span>Длина палки</span></li>
+    <li>5 кг <span>Вес палки</span></li>
+    <li>Карбон<span>Материал</span></li>
+  </ul>
+  <div class="carousel-wrapper">
+    <a class="current-picture picture-1" href="#"></a>
+    <a class="picture-2" href="#"></a>
+    <a class="picture-2" href="#"></a>
+  </div>
+  <!--Карусель для смены картинок палки для сэлфи-->
+  <section class="catalog-popular">
+    <h3 class="visually-hidden">Популярные разделы каталога</h3>
+    <ul class="catalog-popular">
+      <li>
+        <a href="#"><span class=catalog-popular-img1"></span></a>
+        <a href="#"><p>Виртуальная реальность</p></a>
+      </li>
+      <li>
+        <a href="#"><span class="catalog-popular-img2"></span></a>
+        <a href="#"><p>Моноподы <br> для селфи</p></a>
+      </li>
+      <li>
+        <a href="#"><span class="catalog-popular-img3"></span></a>
+        <a href="#"><p>Экшн-камеры</p></a>
+      </li>
+      <li>
+        <a href="#"><span class="catalog-popular-img4"></span></a>
+        <a href="#"><p>Умные часы</p></a>
+      </li>
+      <li>
+        <a href="#"><span class="catalog-popular-img5"></span></a>
+        <a href="#"><p>Квадрокоптеры</p></a>
+      </li>
+    </ul>
+  </section>
+  <section class="service-main">
+    <h3 class="visually-hidden">Доставка, гарантия, кредит</h3>
+    <ul>
+      <li>Доставка</li>
+      <li>
+        <button type="button">Гарантия</button>
+      </li>
+      <li>
+        <button type="button">Кредит</button>
+      </li>
+    </ul>
+    <b>Доставка</b>
+    <p>Мы с удовольствием доставим ваш товар прямо к вашему<br>
+      подъезду совершенно бесплатно! Ведь мы неплохо<br>
+      заработаем, поднимая его на ваш этаж.
+    </p>
+    <span class="delivery-img"></span>
+  </section>
 
-  </body>
+  <section>
+    <h3 class="visually-hidden">Логотипы партнеров</h3>
+    <a href="#"><img src="img/logo-1-jpg.png" alt="Логотип компании «DJI»" width="73" height="30"></a>
+    <a href="#"><img src="img/logo-3-jpg.png" alt="Логотип компании «SP Gadgets»" width="37" height="30"></a>
+    <a href="#"><img src="img/logo-3-jpg.png" alt="Логотип компании «Go Pro»" width="73" height="30"></a>
+    <a href="#"><img src="img/logo-4-jpg.png" alt="Логоти компании «Vive»" width="73" height="30"></a>
+    <!--Картинки увеличить (260х100)-->
+  </section>
+
+  <!--<span class="black-decorative-line"></span>
+  <span class="black-decorative-line"></span>-->
+
+  <section class="about-main">
+    <div class="about-us-container">
+      <h3>О нас</h3>
+      <p>Огромный выбор гаджетов не оставит равнодушным гика,<br>
+        который есть в каждом из нас.</p>
+      <p>Мы можем доставить ваш товар в самые отдаленные точки <br>
+        России! DEVICE работает со многими транспортными компаниями:</p>
+      <ul>
+        <li><a href="#">Деловые Линии</a></li>
+        <li><a href="#">Автотрейдинг</a></li>
+        <li><a href="#">ЖелДорЭкспедиция</a></li>
+      </ul>
+      <a class="button" href="#">Подробнее о нас</a>
+    </div>
+    <div class="contacts">
+      <h3>Контакты</h3>
+      <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете<br> проверить работоспособность покупки.
+        Всякое бывает.</p>
+      <a href="#">
+        <img src="img/map-jpg.png" alt="Карта нашего местонахождения" width="560" height="222">
+      </a>
+      <button type="button">Напишите нам</button>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <img class="footer-logo" src="img/device.png" alt="«Логотип магазина Девайс»">
+  <p>г. Москва, ул. Строителей, 15</p>
+  <section class="service-footer">
+    <ul>
+      <li>
+        <button type="button">Доставка</button>
+      </li>
+      <li>
+        <button type="button">Гарантия</button>
+      </li>
+      <li>
+        <button type="button">Контакты</button>
+      </li>
+    </ul>
+    <ul class="social">
+      <li><a class="social-button" href="#">Фейсбук</a></li>
+      <li><a class="social-button" href="#">Инстаграм</a></li>
+      <li><a class="social-button" href="#">Твитер</a></li>
+    </ul>
+    <p>Тел.: +7 (495) 495-95-95</p>
+    <a href="https://htmlacademy.ru">
+      <img src="img/logo-htmlacademy.png" alt="Сделано в HTML-Academy" width="27" height="35">
+    </a>
+    <!--<span class="yellow-decorative-line"></span>-->
+  </section>
+  <section class="footer-user-activity">
+    <button class="modal-login" type="button">Войти</button>
+    <!--Здесь будет форма-->
+    <span class="modal-close"></span>
+    <a class="button" href="#">Сравнить</a>
+    <button type="button">Корзина</button>
+  </section>
+</footer>
+</body>
 </html>
