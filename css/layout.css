@@ -1,0 +1,30 @@
+.background-black {
+  background-color: black;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.focus:focus {
+  outline: 1px #cfcffb;
+;
+
+}
+.catalog-popular-img1,
+.catalog-popular-img2,
+.catalog-popular-img3,
+.catalog-popular-img4,
+.catalog-popular-img5,
+.catalog-popular-img6 {
+  width: 97px;
+  height: 55px;
+  background-color: azure;
+}
