@@ -13,8 +13,8 @@
   overflow: hidden;
 }
 
-.focus:focus {
-  outline: 5px #cfcffb;
+.focus :focus {
+  outline: 5px solid red;
 }
 .catalog-popular-img1 {
   display: inline-block;

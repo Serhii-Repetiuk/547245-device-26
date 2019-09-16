@@ -17,9 +17,9 @@
       <li><a href="#">Гарантия</a></li>
       <li><a href="#">Контакты</a></li>
     </ul>
-    <button class="open-fast-catalog">+</button>
+    <button class="open-catalog">+</button>
     <!--Расскрывающееся окно каталога товаров (невидимо пока не нажмем кнопку "+")-->
-    <ul class="fast-catalog-list visually-hidden">
+    <ul class="header-catalog-list visually-hidden">
       <li><a href="#">Виртуальная реальность</a></li>
       <li><a href="#">Моноподы для селфи</a></li>
       <li><a href="#">Экшн-камеры</a></li>
@@ -28,6 +28,10 @@
       <li><a href="#">Квадрокоптеры</a></li>
     </ul>
     <ul class="header-user-activity">
+      <li>
+        <label for="search" aria-label="Поиск по сайту"></label>
+        <input id="search" type="search" value="Поиск по сайту" alt="Поле поиска">
+      </li>
       <li>
         <button class="modal-login" type="button">Войти</button>
         <span class="modal-close"></span>
@@ -38,7 +42,6 @@
         <button type="button">Корзина</button>
       </li>
     </ul>
-    <input type="search" value="Поиск по сайту" alt="Поле поиска">
   </nav>
 </header>
 
@@ -58,11 +61,13 @@
       Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
     </li>
     <li><a href="#">Подробнее</a></li>
-    <li>8,5 м <span >Длина палки</span></li>
-    <li>5 кг <span>Вес палки</span></li>
-    <li>Карбон <span>Материал</span></li>
+    <li>8,5 м <span><a href="#">Длина палки</a></span></li>
+    <li>5 кг <span><a href="#">Вес палки</a></span></li>
+    <li>Карбон <span><a href="#">Материал</a></span></li>
     <!--На три верхник элемента не удаеться установить фокус. Не понимаю как изменить, что бы сохранить логику
-    (так как я оформил показывали на скринкасте)-->
+    (так как я оформил показывали на скринкасте)
+    *upd пока изменил положив в ссылку, даже буду думать.
+    -->
   </ul>
   <div class="carousel-wrapper">
     <a class="current-picture picture-1" href="#"></a>
@@ -111,10 +116,10 @@
       </li>
     </ul>
 
-    <!--Изменящиеся поля Доставка, Кредит, Гарантия-->
+    <!--Изменяющиеся поля Доставка, Кредит, Гарантия-->
 
     <div class="delivery-wrapper">
-      <b>Доставка</b>
+      <strong>Доставка</strong>
       <p>Мы с удовольствием доставим ваш товар прямо к вашему <br>
         подъезду совершенно бесплатно! Ведь мы неплохо <br>
         заработаем, поднимая его на ваш этаж.
@@ -123,7 +128,7 @@
       <button class="inactive-button" type="button">Доставка</button>
     </div>
     <div class="warranty-wrapper visually-hidden">
-      <b>Гарантия</b>
+      <strong>Гарантия</strong>
       <p>Если из-за возгорания купленного у нас товара у вас сгорит <br>
         дом — не переживайте, мы выдадим вам новый. <br>
         Товар, не дом, конечно же.
@@ -132,7 +137,7 @@
       <button class="inactive-button" type="button">Гарантия</button>
     </div>
     <div class="credit-wrapper visually-hidden">
-      <b>Кредит</b>
+      <strong>Кредит</strong>
       <p>Залезть в долговую яму стало проще! Кредитные <br>
         консультанты подберут для вас наиболее выгодные <br>
         условия кредита. Выгодные для нашего банка, разумеется.
@@ -145,12 +150,18 @@
   <!--Форма доставки-->
   <section>
     <form action="https://echo.htmlacademy.ru" method="post">
-      <label for="name">Ваше имя</label>
-      <input id="name" type="text" name="name" value="Имя Фамилия">
-      <label for="email">Ваш e-mail:</label>
-      <input id="email" type="email" name="email" value="email@example.com">
-      <label for="mail-body">Текст письма:</label>
-      <textarea name="mail-body" id="mail-body" cols="30" rows="10"></textarea>
+      <div class="delivery-name-wrapper">
+        <label for="name">Ваше имя</label>
+        <input id="name" type="text" name="name" value="Имя Фамилия">
+      </div>
+      <div class="delivery-email-wrapper">
+        <label for="email">Ваш e-mail:</label>
+        <input id="email" type="email" name="email" value="email@example.com">
+      </div>
+      <div class="delivery-textarea-wrapper">
+        <label for="mail-body">Текст письма:</label>
+        <textarea name="mail-body" id="mail-body" cols="30" rows="10"></textarea>
+      </div>
       <button type="submit">Отправить</button>
       <button type="button"><img src="img/svg/modal-close.svg" alt="Закрыть форму доставки"></button>
     </form>
