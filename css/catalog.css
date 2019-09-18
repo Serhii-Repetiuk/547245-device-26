@@ -1,0 +1,200 @@
+.catalog-h1 {
+  width: 493px;
+  height: 42px;
+  font-size: 47px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.02;
+  letter-spacing: 0.47px;
+  text-align: left;
+}
+
+.catalog button {
+  background-color: #ebebeb;
+  border: none;
+  width: 67px;
+  font-size: 16px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: 3.2px;
+  text-align: left;
+}
+
+.nav-arrow {
+  width: 4px;
+  height: 7px;
+  object-fit: contain;
+}
+
+.user-navigation a {
+  width: 142px;
+  height: 14px;
+  opacity: 0.3;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.71;
+  letter-spacing: 0.14px;
+  text-align: left;
+}
+
+.filter-header {
+  width: 87px;
+  height: 11px;
+  font-size: 16px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: 3.2px;
+  text-align: left;
+}
+
+.divider {
+  display: inline-block;
+  height: 2px;
+  background-color: black;
+}
+
+.sorting {
+  background-color: #ebebeb;
+}
+
+.sorting-prise {
+  background-color: #ebebeb;
+  border: none;
+  height: 13px;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+  text-align: left;
+}
+
+
+.sorting-type {
+  background-color: #ebebeb;
+  border: none;
+  height: 13px;
+  opacity: 0.3;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+  text-align: left;
+}
+
+.sorting-popular {
+  background-color: #ebebeb;
+  border: none;
+  width: 128px;
+  height: 13px;
+  opacity: 0.3;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+  text-align: left;
+}
+
+
+.arrow-up {
+  background-color: #ebebeb;
+  border: none;
+  width: 11px;
+  height: 10px;
+  object-fit: contain;
+}
+
+.arrow-down {
+  background-color: #ebebeb;
+  border: none;
+  width: 11px;
+  height: 10px;
+  object-fit: contain;
+  opacity: 0.2;
+}
+
+
+/*Display: inline-block test*/
+.pagination {
+  display: inline-block;
+  width: 759px;
+  height: 70px;
+  background-color: #ebebeb;
+
+}
+
+.pagination-list {
+  display: inline-block;
+}
+
+.pagination-list li,
+.pagination-list a{
+  display: inline-block;
+}
+.pagination-item {
+  display: inline-block;
+  width: 9px;
+  opacity: 0.3;
+  font-size: 16px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: 3.2px;
+  text-align: left;
+}
+
+.pagination-item-current {
+  display: inline-block;
+  width: 9px;
+  font-size: 16px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: 3.2px;
+  text-align: left;
+}
+
+/*Display: inline-block test end*/
+
+
+
+
+/*Шрифты каталога*/
+
+.filters-wrapper li,
+.sorting button{
+  font-family: 'Open Sans', sans-serif
+}
+
+.main h3 {
+  font-family: 'Gilroy', sans-serif;
+}
+
+.main h1 {font-family: 'Gilroy', sans-serif;
+}
+
+.catalog p,
+.catalog li,
+.catalog button {
+  font-family: 'Gilroy', sans-serif;
+}
+
+
+.filters-wrapper{
+  background-color: #ebebeb;
+
+}
