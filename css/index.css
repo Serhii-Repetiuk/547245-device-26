@@ -1,4 +1,5 @@
 body {
+  padding-top: 45px;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -24,12 +25,11 @@ a:hover  {text-decoration: underline;}
 
 
 /*ПОЗИЦИОНИРОВАНИЕ И СЕТКА*/
-
+.carousel-wrapper {
+  background-color: crimson;
+}
 /*---Header---*/
 
-.page-header {
-  margin-top: 45px;
-}
 
 .navigation {
   padding-top: 53px;
@@ -41,6 +41,8 @@ a:hover  {text-decoration: underline;}
   position: relative;
 }
 
+
+
 .main-header-logo {
   top: -44px;
   left: 70px;
@@ -49,8 +51,6 @@ a:hover  {text-decoration: underline;}
 }
 
 .navigation-list {
-  margin-top: 35px;
-  margin-left: 30px;
   margin-bottom: 5px;
   display: flex;
   justify-content: flex-start;
@@ -68,6 +68,15 @@ a:hover  {text-decoration: underline;}
   vertical-align: middle;
 }
 
+.main-navigation-wrapper {
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-between;
+  order: 1;
+}
+
+
+
 .navigation-list a {
   font-size: 19px;
   font-weight: 800;
@@ -81,7 +90,6 @@ a:hover  {text-decoration: underline;}
 
 .navigation-delivery{
   vertical-align: middle;
-  padding-left: 350px;
 }
 
 .navigation-warranty {
@@ -127,9 +135,10 @@ a:hover  {text-decoration: underline;}
 /*}*/
 
 .header-user-activity {
+  padding-left: 0;
   margin-top: 3px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 
 /*---Main---*/
@@ -152,20 +161,21 @@ a:hover  {text-decoration: underline;}
 .catalog-item-wrapper {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-end;
 }
 .item-description-wrapper {
   margin-left: auto;
   display: flex;
   flex-direction: column;
+  padding-right: 83px;
 }
 
 .catalog-item-description {
+  padding-left: 0;
   padding-top: 100px;
   position: relative;
 }
 .selfy-rod-description {
-  padding-left: 90px;
   font-size: 17px;
   font-weight: 300;
   line-height: 2;
@@ -173,7 +183,7 @@ a:hover  {text-decoration: underline;}
   color: #464646;
 }
 
-.catalog-item-feature span {
+.catalog-item-features span {
   font-size: 16px;
   font-weight: 300;
   line-height: 1.54;
@@ -191,44 +201,41 @@ a:hover  {text-decoration: underline;}
   letter-spacing: 0.47px;
 }
 
-.catalog-item-feature {
-  max-width: 600px;
-  display: inline-block;
-}
-.catalog-item-feature li {
-  display: inline-block;
+
+.catalog-item-features {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding-left: 0;
 }
 
-.catalog-item-feature a{
-  text-align: center;
-}
 
-.item-length,
-.item-weight,
-.item-material {
+.item-feature {
+  display: flex;
+  flex-direction: column;
   padding-top:65px;
-  max-width: 100px;
   font-size: 41px;
   font-weight: 300;
   line-height: 1.33;
-  text-align: center;
 }
 
-.item-weight {
-  padding-left: 65px;
-}
-
-.item-material {
-  padding-left: 45px;
-}
 
 .item-detail {
-  display: inline-block;
   font-size: 41px;
   font-weight: 300;
   line-height: 1.33;
-  min-width: 200px;
-  padding-right: 300px;
+}
+
+.carousel-detail-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delivery-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 /*Доделать!!!*/
@@ -239,7 +246,7 @@ a:hover  {text-decoration: underline;}
   padding-top: 25px;
   padding-left: 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   font-size: 18px;
   font-weight: 800;
   line-height: 1.33;
@@ -255,7 +262,51 @@ a:hover  {text-decoration: underline;}
 .service-main {
   display: flex;
   justify-content: space-around;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #e5e5e5;
 }
+
+.service-main strong {
+  font-size: 47px;
+  font-weight: 800;
+  line-height: 1.02;
+  letter-spacing: 0.47px;
+}
+
+.service-main p {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 2;
+  letter-spacing: 0.15px;
+  color: #464646;
+}
+
+.services-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 5px solid black;
+}
+
+.active-service {
+  width: 278px;
+  height: 40px;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.33;
+  letter-spacing: 3.6px;
+  text-align: center;
+  background-color: #000000;
+  color: #f0c52e;
+}
+
+.service-main li {
+  margin: 0;
+  padding-top: 15px;
+
+}
+
 
 /*Следуйщий блок partners-logos*/
 
@@ -277,22 +328,46 @@ a:hover  {text-decoration: underline;}
   justify-content: space-around;
 }
 
+.about-main p {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 2;
+  color: #464646;
+}
+
+.about-delivery a {
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 2.5;
+  color: #000000;
+}
+
 .about-us-container{
   display: flex;
   flex-direction: column;
-  align-content: space-around ;
 }
 
 .contacts {
   display: flex;
   flex-direction: column;
-  align-content: space-around;
+}
+
+.map-img {
+  padding-bottom: 17px;
+}
+
+.map-close {
+  width: 55px;
+  height: 55px;
+  opacity: 0.5;
+  background: transparent;
 }
 
 
 /*Следуйщий блок page-footer*/
 
 .page-footer {
+  margin-top: 100px;
   padding-top: 65px;
   padding-bottom: 65px;
   display: flex ;
@@ -359,6 +434,8 @@ a:hover  {text-decoration: underline;}
 
 
 .page-header {
+  padding-left: 60px;
+  padding-right: 60px;
   background-color: #f8e297;
 }
 .plus,
@@ -371,7 +448,6 @@ a:hover  {text-decoration: underline;}
 }
 
 .search-wrapper {
-  padding-left: 35px;
   position: relative;
 }
 
@@ -383,7 +459,7 @@ a:hover  {text-decoration: underline;}
   height: 20px;
   background-image: url("../img/svg/search.svg");
   background-repeat: no-repeat;
-  vertical-align: center;
+  vertical-align: middle;
 }
 
 .search {
@@ -509,6 +585,13 @@ a:hover  {text-decoration: underline;}
 
 
 /*Стили кнопок*/
+.button {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  border: none;
+}
+
 
 .button-back {
   text-transform: uppercase;
@@ -525,7 +608,7 @@ a:hover  {text-decoration: underline;}
 a.button-back  {
   display: inline-block;
   height:6px;
-  vertical-align: center;
+  vertical-align: middle;
   padding-top:4.5px ;
   font-size: 18px;
   font-weight: 800;
@@ -576,7 +659,7 @@ a.button-back  {
 }
 .catalog-popular-img3{
   margin-top: 41px;
-  margin-left: 38px;
+  margin-left: 45px;
   display: inline-block;
   background-image: url("../img/svg/popular-3.svg");
   width: 71px;
@@ -614,7 +697,7 @@ a.button-back  {
 
 /*Стили для футера*/
 
-.footer {
+.page-footer {
   background-color: #464646;
   color: white;
 }

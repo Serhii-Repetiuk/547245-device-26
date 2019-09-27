@@ -18,12 +18,16 @@
     </a>
     </div>
     <nav class="navigation">
-      <ul class="navigation-list font-gilroy">
-        <li><a class="navigation-catalog" href="catalog.html">Каталог товаров</a> <button class="open-catalog"><img src="img/svg/plus.svg" class="plus" alt="Кнопка +" width="18" height="18"></button></li>
-        <li><a class="navigation-delivery" href="#">Доставка</a></li>
-        <li><a class="navigation-warranty" href="#">Гарантия</a></li>
-        <li><a class="navigation-contacts" href="#">Контакты</a></li>
-      </ul>
+      <div class="main-navigation-wrapper">
+        <div class="navigation-catalog-wrapper">
+          <a class="navigation-catalog" href="catalog.html">Каталог товаров</a><button class="open-catalog"><img src="img/svg/plus.svg" class="plus" alt="Кнопка +" width="18" height="18"></button>
+        </div>
+        <ul class="navigation-list font-gilroy">
+          <li><a class="navigation-delivery" href="#">Доставка</a></li>
+          <li><a class="navigation-warranty" href="#">Гарантия</a></li>
+          <li><a class="navigation-contacts" href="#">Контакты</a></li>
+        </ul>
+      </div>
       <!--Расскрывающееся окно каталога товаров (невидимо пока не нажмем кнопку "+")-->
       <ul class="header-catalog-list visually-hidden">
         <li><a href="#">Виртуальная реальность</a></li>
@@ -79,18 +83,31 @@
             Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
           </li>
         </ul>
-        <ul class="catalog-item-feature">
-          <li class="item-detail font-gilroy"><a class="button-back" href="#">Подробнее</a></li>
-          <li class="item-length font-gilroy">8,5 м <span><a href="#">Длина палки</a></span></li>
-          <li class="item-weight font-gilroy">5 кг <span><a href="#">Вес палки</a></span></li>
-          <li class="item-material font-gilroy">Карбон <span><a href="#">Материал</a></span></li>
+        <div class="carousel-detail-wrapper">
+          <span class="item-detail font-gilroy">
+           <a class="button-back" href="#">Подробнее</a>
+          </span>
+          <div class="carousel">
+            <input type="radio" id="img-1"
+                   name="contact" value="email" checked>
+            <label for="img-1"></label>
+
+            <input type="radio" id="img-2"
+                   name="contact" value="phone">
+            <label for="img-2"></label>
+
+            <input type="radio" id="img-3"
+                   name="contact" value="mail">
+            <label for="img-3"></label>
+          </div>
+        </div>
+
+        <ul class="catalog-item-features">
+          <li class="item-feature font-gilroy">8,5 м <span><a href="#">Длина палки</a></span></li>
+          <li class="item-feature font-gilroy">5 кг <span><a href="#">Вес палки</a></span></li>
+          <li class="item-feature font-gilroy">Карбон <span><a href="#">Материал</a></span></li>
           <!--Может стоит удалить Span и оставить только ссылку?-->
         </ul>
-        <div class="carousel-wrapper">
-          <a class="current-picture picture-1" href="#"></a>
-          <a class="picture-2" href="#"></a>
-          <a class="picture-2" href="#"></a>
-        </div>
       </div>
     </div>
     <!--Карусель для смены картинок палки для сэлфи-->
@@ -123,15 +140,18 @@
         </li>
       </ul>
     </section>
+
     <section class="service-main">
       <h3 class="visually-hidden">Доставка, гарантия, кредит</h3>
-      <ul>
-        <li>Доставка</li>
+      <ul class="services-list">
         <li>
-          <button class="button-back button" type="button">Гарантия</button>
+          <button class="button active-service font-gilroy" type="button">Доставка</button>
         </li>
         <li>
-          <button class="button-back button" type="button">Кредит</button>
+          <button class="button-back" type="button">Гарантия</button>
+        </li>
+        <li>
+          <button class="button-back" type="button">Кредит</button>
         </li>
       </ul>
 
@@ -144,7 +164,6 @@
           заработаем, поднимая его на ваш этаж.
         </p>
         <span class="delivery-img"></span>
-        <button class="inactive-button" type="button">Доставка</button>
       </div>
       <div class="warranty-wrapper visually-hidden">
         <strong class="font-gilroy">Гарантия</strong>
@@ -203,22 +222,20 @@
     <!--Подключить Нормалайз-->
     <!--Подключить локально шрифты-->
     <!--Скачать PSD-макет со шрифтам-->
+    <!--Класы в нижнем регистре-->
+    <!--Называть page-footer, page-header-->
+    <!--Название класов для шрифтов-->
+    <!--Поудалять ненужные стили !!! font-style: normal; font-stretch: normal;  text-align: left; filters, objectfeed-contain, letter-spacing 0.17 не ставить-->
 
     <!--На сдачу-->
     <!--Подключить два ЦСС только-->
     <!--Минифицировать Normalize-->
 
 
-    <!--Класы в нижнем регистре-->
     <!--Класс h1-catalog на page-title-->
-    <!--Называть page-footer, page-header-->
-    <!--Название класов для шрифтов-->
-    <!--Поудалять ненужные стили !!! font-style: normal; font-stretch: normal;  text-align: left; filters, objectfeed-contain, letter-spacing 0.17 не ставить-->
     <!--Не задавать тексту ширину и высоту (тольок кнопки и картинки) избегать высоту и ширину-->
-
-
-    <!--Дать бади основной шрифт. Фонт фемили не вешать класами-->
     <!--Всем секшенам поставить класы-->
+
     <!--Пересмотреть лекцио по разметке (кнопка ссылка кнопкой или ссылкой) поменять кнопки на ссылку (открыть карту - кнопка)
     попапы всегда кнопки, переходы на страницы ссылки-->
     <!---->
@@ -233,7 +250,7 @@
           который есть в каждом из нас.</p>
         <p>Мы можем доставить ваш товар в самые отдаленные точки <br>
           России! DEVICE работает со многими транспортными компаниями:</p>
-        <ul class="about-delivery">
+        <ul class="about-delivery font-gilroy">
           <li><a href="#">Деловые Линии</a></li>
           <li><a href="#">Автотрейдинг</a></li>
           <li><a href="#">ЖелДорЭкспедиция</a></li>
@@ -246,10 +263,10 @@
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете<br> проверить работоспособность покупки.
           Всякое бывает.</p>
         <a href="#">
-          <img src="img/map.png" alt="Адрес нашего местоположения. город Москва, улица Строителей, 15" width="560" height="222">
+          <img class="map-img" src="img/map.png" alt="Адрес нашего местоположения. город Москва, улица Строителей, 15" width="560" height="222">
         </a>
         <img class="visually-hidden" src="img/map-big.png" alt="Увеличеная карта местоположения" width="960" height="559">
-        <button><img src="img/svg/modal-close.svg" alt="Кнопка закрытия увеличеной карты"></button>
+        <button class="button map-close visually-hidden"><img src="img/svg/modal-close.svg" alt="Кнопка закрытия увеличеной карты"></button>
         <button class="button-back font-gilroy" type="button">Напишите нам</button>
       </div>
     </section>
