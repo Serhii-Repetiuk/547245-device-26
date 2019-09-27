@@ -313,6 +313,8 @@ a:hover  {text-decoration: underline;}
 .partners-logos {
   display: flex;
   justify-content: space-around;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .black-decorative-line {
