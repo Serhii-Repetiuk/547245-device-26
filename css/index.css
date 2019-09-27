@@ -51,6 +51,9 @@ a:hover  {text-decoration: underline;}
 }
 
 .navigation-list {
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
   margin-bottom: 5px;
   display: flex;
   justify-content: flex-start;
@@ -69,6 +72,7 @@ a:hover  {text-decoration: underline;}
 }
 
 .main-navigation-wrapper {
+  align-items: center;
   margin-top: 35px;
   display: flex;
   justify-content: space-between;
@@ -85,7 +89,10 @@ a:hover  {text-decoration: underline;}
 
 
 .navigation-catalog {
+  background-color: crimson;
   vertical-align: middle;
+  font-size: 19px;
+
 }
 
 .navigation-delivery{

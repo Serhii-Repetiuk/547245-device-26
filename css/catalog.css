@@ -4,11 +4,8 @@
   height: 42px;
   font-size: 47px;
   font-weight: 800;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.02;
   letter-spacing: 0.47px;
-  text-align: left;
 }
 
 .catalog button {
@@ -17,11 +14,8 @@
   width: 67px;
   font-size: 16px;
   font-weight: 800;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.5;
   letter-spacing: 3.2px;
-  text-align: left;
 }
 .catalog-item-image{
   background-color: #ebebeb;
@@ -39,23 +33,15 @@
   opacity: 0.3;
   font-size: 14px;
   font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.71;
   letter-spacing: 0.14px;
-  text-align: left;
 }
 
 .filter-header {
-  width: 87px;
-  height: 11px;
   font-size: 16px;
   font-weight: 800;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.5;
   letter-spacing: 3.2px;
-  text-align: left;
 }
 
 .divider {
@@ -73,12 +59,7 @@
   border: none;
   height: 13px;
   font-size: 14px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.29;
-  letter-spacing: normal;
-  text-align: left;
 }
 
 
@@ -88,11 +69,7 @@
   height: 13px;
   opacity: 0.3;
   font-size: 14px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.29;
-  letter-spacing: normal;
   text-align: left;
 }
 
@@ -103,12 +80,7 @@
   height: 13px;
   opacity: 0.3;
   font-size: 14px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.29;
-  letter-spacing: normal;
-  text-align: left;
 }
 
 
@@ -131,45 +103,24 @@
 
 
 /*Display: inline-block test*/
-.pagination {
-  display: inline-block;
-  width: 759px;
-  height: 70px;
-  background-color: #ebebeb;
 
-}
 
-.pagination-list {
-  display: inline-block;
-}
 
-.pagination-list li,
-.pagination-list a{
-  display: inline-block;
-}
 .pagination-item {
-  display: inline-block;
   width: 9px;
   opacity: 0.3;
   font-size: 16px;
   font-weight: 800;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.5;
   letter-spacing: 3.2px;
-  text-align: left;
 }
 
 .pagination-item-current {
-  display: inline-block;
   width: 9px;
   font-size: 16px;
   font-weight: 800;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.5;
   letter-spacing: 3.2px;
-  text-align: left;
 }
 
 /*Display: inline-block test end*/
