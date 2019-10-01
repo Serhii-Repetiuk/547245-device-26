@@ -8,6 +8,10 @@ body {
   margin: 0 auto;
 }
 
+img {
+  width: 100%;
+}
+
 li {list-style-type: none; }
 
 a {
@@ -45,7 +49,7 @@ a:hover  {text-decoration: underline;}
 
 .main-header-logo {
   top: -44px;
-  left: 70px;
+  left: -505px;
   position: absolute;
   padding-top: 21px;
 }
@@ -142,11 +146,29 @@ a:hover  {text-decoration: underline;}
 /*}*/
 
 .header-user-activity {
+  display: flex;
+  flex-wrap: wrap;
   padding-left: 0;
   margin-top: 3px;
-  display: flex;
-  justify-content: space-between;
 }
+
+.header-login-button {
+  margin-right: 200px;
+}
+/*Доработыть отступ у кнопки*/
+
+
+.header-user-activity li {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.user-name-wrapper {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
 
 /*---Main---*/
 
@@ -159,11 +181,6 @@ a:hover  {text-decoration: underline;}
   position: relative;
 }
 
-.selfy-rod-img {
-  position: absolute;
-  top: -120px;
-  left: 110px;
-}
 
 .catalog-item-wrapper {
   display: flex;
@@ -200,7 +217,6 @@ a:hover  {text-decoration: underline;}
 
 .add-title {
   position: absolute;
-  left: 35px;
   top: -52px;
   font-size: 55px;
   font-weight: 800;
@@ -415,11 +431,6 @@ a:hover  {text-decoration: underline;}
 }
 
 
-.footer-user-activity {
-  display: flex;
-}
-
-
 .catalog-popular {
   margin-top:78px;
 }
@@ -443,8 +454,10 @@ a:hover  {text-decoration: underline;}
 
 
 .page-header {
+  padding-bottom: 53px;
   padding-left: 60px;
   padding-right: 60px;
+  margin-bottom: 44px;
   background-color: #f8e297;
 }
 .plus,
@@ -454,6 +467,11 @@ a:hover  {text-decoration: underline;}
   opacity: 0.5;
   background-color: #f8e297;
   border: none;
+}
+
+.user-activity-wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 .search-wrapper {
@@ -502,25 +520,27 @@ a:hover  {text-decoration: underline;}
 }
 
 .user-name {
-  font-size: 15px;
+  margin-left: 15px;
+  margin-right: 10px;
+  font-size: 17px;
   font-weight: 300;
-
 }
 
 .login-list {
-  padding-left: 370px;
+  display: flex;
 }
 
 .compare-list {
-  padding-left: 245px;
+  margin: auto;
 }
 
 .cart-list {
-  padding-left: 49px;
+  margin: auto;
 }
 
 
 .login-image {
+  margin: auto;
   display: inline-block;
   vertical-align: middle;
   width: 18px;
@@ -542,12 +562,17 @@ a:hover  {text-decoration: underline;}
 }
 
 .modal-logoff {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 2;
+  letter-spacing: 0.15px;
   background-color: #f8e297;
   border: none;
   opacity: 0.3;
 }
 
 .compare {
+  margin: auto;
   padding-left: 7px;
   display: inline-block;
   vertical-align: middle;
@@ -717,6 +742,7 @@ a.button-back  {
 }
 
 .footer-user-activity {
+  display: flex;
   opacity: 0.7;
   font-size: 15px;
   font-weight: 300;
@@ -726,17 +752,12 @@ a.button-back  {
 }
 
 .footer-user-activity button {
+  margin: 5px;
   font-family: 'Open Sans', sans-serif;
   border: none;
   background-color: transparent;
 }
 .footer-user-activity button:hover {
-  width: 58px;
-  height: 15px;
-  font-size: 15px;
-  font-weight: 300;
-  line-height: 2;
-  letter-spacing: 0.15px;
   color: #ffffff;
 }
 

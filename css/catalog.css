@@ -1,7 +1,13 @@
 
+.catalog-main ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+
 .catalog-h1 {
-  width: 493px;
-  height: 42px;
+  padding-top: 44px;
+  padding-bottom: 30px;
+  margin: 0;
   font-size: 47px;
   font-weight: 800;
   line-height: 1.02;
@@ -24,6 +30,8 @@
 .nav-arrow {
   width: 4px;
   height: 7px;
+  padding-right: 18px;
+  padding-left: 18px;
   object-fit: contain;
 }
 
@@ -38,51 +46,19 @@
 }
 
 .filter-header {
+  margin-bottom: 69px;
   font-size: 16px;
   font-weight: 800;
   line-height: 1.5;
   letter-spacing: 3.2px;
+  background-color: #d9d9d9;
 }
 
 .divider {
   display: inline-block;
-  height: 2px;
+  height: 3px;
   background-color: black;
 }
-
-.sorting {
-  background-color: #ebebeb;
-}
-
-.sorting-prise {
-  background-color: #ebebeb;
-  border: none;
-  height: 13px;
-  font-size: 14px;
-  line-height: 1.29;
-}
-
-
-.sorting-type {
-  background-color: #ebebeb;
-  border: none;
-  height: 13px;
-  opacity: 0.3;
-  font-size: 14px;
-  line-height: 1.29;
-  text-align: left;
-}
-
-.sorting-popular {
-  background-color: #ebebeb;
-  border: none;
-  width: 128px;
-  height: 13px;
-  opacity: 0.3;
-  font-size: 14px;
-  line-height: 1.29;
-}
-
 
 .arrow-up {
   background-color: #ebebeb;
@@ -123,11 +99,174 @@
   letter-spacing: 3.2px;
 }
 
-/*Display: inline-block test end*/
 
+/*Позиционирование каталога товаров*/
 
+.user-navigation-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+}
 
-.filters-wrapper{
+.user-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.catalog-filter-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  padding-left: 199px;
+  padding-right: 67px;
   background-color: #ebebeb;
+}
 
+.filter-color li {
+  margin-bottom: 24px;
+}
+
+/*Стили для чекбоксов*/
+
+
+/*Стили для чекбоксовю. Конец*/
+
+.cost-wrapper {
+  margin-bottom: 67px;
+}
+
+.catalog-wrapper {
+  display: flex;
+}
+
+
+.sorting {
+  display: flex;
+  justify-content: space-between;
+
+  padding-left: 30px;
+  padding-right: 20px;
+
+  background-color: #ebebeb;
+}
+
+.sorting-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sorting-wrapper h3 {
+ margin-right: 40px;
+}
+
+.sorting-list {
+  display: flex;
+  align-items: center;
+}
+
+.sorting-list button {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 100%;
+  background-color: transparent;
+  box-sizing: border-box;
+}
+
+.sorting-button {
+  opacity: 0.3;
+  font-size: 14px;
+  line-height: 1.29;
+}
+
+.active-sorting-button {
+  font-size: 14px;
+  line-height: 1.29;
+  color: #000000;
+}
+
+
+.updown-arrow-wrapper {
+  display: flex;
+  align-items: center;
+}
+.updown-arrow-wrapper button {
+  height: 100%;
+  width: 100%;
+}
+
+.arrow-down {
+  margin-left: 5px;
+}
+
+
+.catalog-list {
+  margin-top: 69px;
+  margin-bottom: 41px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.catalog-list h2 {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.33;
+  letter-spacing: 0.18px;
+}
+
+.catalog-list p {
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.16px;
+  color: #464646;
+}
+
+.title-prise-wrapper {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.catalog-item-link {
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog-item-link img {
+  order: -1;
+}
+
+
+.pagination {
+  margin-left: 30px;
+  margin-right: 30px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #ebebeb;
+}
+
+.pagination button {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.5;
+  letter-spacing: 3.2px;
+}
+
+.pagination-list {
+  display: flex;
+}
+
+.pagination-list li{
+  margin-right: 5px;
+  margin-left: 5px;
 }

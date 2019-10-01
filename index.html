@@ -15,7 +15,7 @@
     <div class="logo-wrapper">
       <a href="index.html">
       <img class="main-header-logo" src="img/svg/device.svg" alt="«Логотип магазина Девайс»" width="187" height="45">
-    </a>
+      </a>
     </div>
     <nav class="navigation">
       <div class="main-navigation-wrapper">
@@ -37,39 +37,42 @@
         <li><a href="#">Умные часы</a></li>
         <li><a href="#">Квадрокоптеры</a></li>
       </ul>
-      <ul class="header-user-activity">
-        <li class="search-wrapper">
+      <div class="user-activity-wrapper">
+        <div class="search-wrapper">
           <span class="search-img" aria-label="Картинка-увелечительного стекла"></span>
           <label for="search" aria-label="Поиск по сайту"></label>
           <input class="search" id="search" type="search" value="Поиск по сайту" alt="Поле поиска">
-        </li>
-        <li class="login-list">
-          <span class="login-image" aria-label="Картинки логин"></span>
-          <button class="modal-login" type="button">Войти</button>
-          <span class="modal-close"></span>
-        </li>
-        <!--Здесь будет форма входа-->
-        <li class="compare-list">
-          <span class="compare-img" aria-label="Картинка сравнения"></span>
-          <a class="compare" href="#">Сравнить</a>
-        </li>
-        <li class="cart-list">
-          <span class="cart-img" aria-label="Картинка корзины"></span>
-          <button class="cart" type="button">Корзина</button>
-        </li>
-      </ul>
+        </div>
+        <ul class="header-user-activity">
+          <li class="login-list">
+            <span class="login-image" aria-label="Картинки логин"></span>
+            <button class="modal-login header-login-button" type="button">Войти</button>
+            <span class="modal-close"></span>
+          </li>
+          <!--Здесь будет форма входа-->
+          <li class="compare-list">
+            <span class="compare-img" aria-label="Картинка сравнения"></span>
+            <a class="compare" href="#">Сравнить</a>
+          </li>
+          <li class="cart-list">
+            <span class="cart-img" aria-label="Картинка корзины"></span>
+            <button class="cart" type="button">Корзина</button>
+          </li>
+        </ul>
+      </div>
     </nav>
-  </header>
     <div class="yellow-header-bar">
       <div class="white-header-line"></div>
       <div class="header-decorative-item font-gilroy">01</div>
     </div>
+  </header>
+
   <main class="page-main">
     <h1 class="visually-hidden">Главная страница сайта Девайс</h1>
     <div class="catalog-item-wrapper">
     <div class="relative-wrapper">
       <a class="selfy-rod-img" href="catalog.html">
-        <img src="img/slider-1.png" alt="Изображение товара «Палка для сэлфи»" width="425" height="545">
+        <img class="selfy-rod-img" src="img/slider-1.png" alt="Изображение товара «Палка для сэлфи»" width="425" height="545">
       </a>
     </div>
     <span class="white-decorative-line"></span>
@@ -303,7 +306,7 @@
         <!--Здесь будет форма-->
         <span class="modal-close"></span>
         <a class="button" href="#">Сравнить</a>
-        <button type="button">Корзина</button>
+        <button class="footer-cart-button" type="button">Корзина</button>
       </section>
 
       <p>Тел.: +7 (495) 495-95-95</p>
