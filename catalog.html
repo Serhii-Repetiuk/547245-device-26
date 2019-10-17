@@ -90,8 +90,11 @@
   </div>
   <div class="catalog-filter-wrapper">
     <section class="filters">
-      <h3 class="visually-hidden">Фильтр товаров</h3>
-      <h3 class="filter-header">Фильтр:</h3>
+      <div class="decorative-filter-wrapper">
+        <h3 class="visually-hidden">Фильтр товаров</h3>
+        <h3 class="filter-header">Фильтр:</h3>
+      </div>
+      <div class="filters-wrapper">
       <div class="divider"></div>
       <h3 class="price-h1">Стоимость</h3>
       <div class="cost-wrapper font-gilroy">
@@ -102,37 +105,39 @@
       <h3>Цвет</h3>
       <ul class="filter-color">
         <li>
-          <label for="color-black"></label>
-          <input id="color-black" type="checkbox" value="Черный" checked>Черный</li>
-        <li>
-          <label for="color-white"></label>
-          <input id="color-white" type="checkbox" value="Белый">Белый
+          <input id="color-black" type="checkbox" value="Черный" checked>
+          <label for="color-black">Черный</label>
         </li>
         <li>
-          <label for="color-blue"></label>
-          <input id="color-blue" type="checkbox" value="Синий" checked>Синий
+          <input id="color-white" type="checkbox" value="Белый">
+          <label for="color-white">Белый</label>
         </li>
         <li>
-          <label for="color-red"></label>
-          <input id="color-red" type="checkbox" value="Красный" checked>Красный
+          <input id="color-blue" type="checkbox" value="Синий" checked>
+          <label for="color-blue">Синий</label>
         </li>
         <li>
-          <label for="color-pink"></label>
-          <input id="color-pink" type="checkbox" value="Розовый">Розовый
+          <input id="color-red" type="checkbox" value="Красный" checked>
+          <label for="color-red">Красный</label>
+        </li>
+        <li>
+          <input id="color-pink" type="checkbox" value="Розовый">
+          <label for="color-pink">Розовый</label>
         </li>
       </ul>
       <h3 class="font-gilroy">Bluetooth</h3>
       <ul>
         <li>
-          <label for="has-bluetooth"></label>
-          <input id="has-bluetooth" type="radio" value="Есть блютус" checked>Есть
+          <label for="has-bluetooth">Есть</label>
+          <input id="has-bluetooth" name="bluetooth" type="radio" value="Есть блютус" checked>
         </li>
         <li>
-          <label for="hasnt-bluetooth"></label>
-          <input id="hasnt-bluetooth" type="radio" value="Нет блютуса">Нет
+          <label for="hasnt-bluetooth">Нет</label>
+          <input id="hasnt-bluetooth" name="bluetooth" type="radio" value="Нет блютуса">
         </li>
       </ul>
       <button class="button-back font-gilroy" type="button">Показать</button>
+      </div>
     </section>
     <div class="catalog-wrapper">
       <section class="catalog">
@@ -182,6 +187,11 @@
                 <p class="catalog-item-prise">2 500 руб.</p>
               </div>
               <img class="catalog-item-image" src="img/item-3.png" alt="Непотопляемая селфи-палка" width="360" height="380">
+              <!--Зафигачить псевдоэлементом-->
+              <div class="add-item">
+                <button class="cart-add">В корзину</button>
+                <button class="сompare-add">Добавить к сравнению</button>
+              </div>
             </a>
           </li>
           <li class="catalog-item">
@@ -253,6 +263,11 @@
     </div>
   </footer>
 </div>
+<script>
+    /*Кнопка *добавить в корзину по ховеру*/
+      let test = document.getElementById("test");
+    /*Кнопка *добавить в корзину по ховеру*/
+</script>
 </body>
 </html>
 

@@ -12,31 +12,33 @@
   <body>
   <div class="wrapper">
   <header class="page-header">
-    <div class="logo-wrapper">
       <a href="index.html">
-      <img class="main-header-logo" src="img/svg/device.svg" alt="«Логотип магазина Девайс»" width="187" height="45">
+       <img class="main-header-logo" src="img/svg/device.svg" alt="«Логотип магазина Девайс»" width="187" height="45">
       </a>
-    </div>
     <nav class="navigation">
       <div class="main-navigation-wrapper">
-        <div class="navigation-catalog-wrapper">
-          <a class="navigation-catalog font-gilroy" href="catalog.html">Каталог товаров</a><button class="open-catalog"><img src="img/svg/plus.svg" class="plus" alt="Кнопка +" width="18" height="18"></button>
-        </div>
+        <ul class="navigation-catalog-wrapper">
+          <li class="navigation-catalog">
+            <a class="navigation-catalog-link font-gilroy" href="catalog.html">Каталог товаров</a>
+            <button class="open-catalog"><img class="plus" src="img/svg/plus.svg" alt="Кнопка +"></button>
+          </li>
+          <li>
+            <ul class="catalog-sub-menu">
+              <li><a href="#">Виртуальная реальность</a></li>
+              <li><a href="#">Моноподы для селфи</a></li>
+              <li><a href="#">Экшн-камеры</a></li>
+              <li><a href="#">Фитнес-браслеты</a></li>
+              <li><a href="#">Умные часы</a></li>
+              <li><a href="#">Квадрокоптеры</a></li>
+            </ul>
+          </li>
+        </ul>
         <ul class="navigation-list font-gilroy">
           <li><a class="navigation-delivery" href="#">Доставка</a></li>
           <li><a class="navigation-warranty" href="#">Гарантия</a></li>
           <li><a class="navigation-contacts" href="#">Контакты</a></li>
         </ul>
       </div>
-      <!--Расскрывающееся окно каталога товаров (невидимо пока не нажмем кнопку "+")-->
-      <ul class="header-catalog-list visually-hidden">
-        <li><a href="#">Виртуальная реальность</a></li>
-        <li><a href="#">Моноподы для селфи</a></li>
-        <li><a href="#">Экшн-камеры</a></li>
-        <li><a href="#">Фитнес-браслеты</a></li>
-        <li><a href="#">Умные часы</a></li>
-        <li><a href="#">Квадрокоптеры</a></li>
-      </ul>
       <div class="user-activity-wrapper">
         <div class="search-wrapper">
           <span class="search-img" aria-label="Картинка-увелечительного стекла"></span>
@@ -61,18 +63,21 @@
         </ul>
       </div>
     </nav>
-    <div class="yellow-header-bar">
+    <div class="yellow-header-bar font-gilroy">
       <div class="white-header-line"></div>
-      <div class="header-decorative-item font-gilroy">01</div>
+      <div class="header-decorative-item decorative-01">01</div>
+      <div class="header-decorative-item decorative-02 visually-hidden">02</div>
+      <div class="header-decorative-item decorative-03 visually-hidden">03</div>
     </div>
   </header>
 
   <main class="page-main">
     <h1 class="visually-hidden">Главная страница сайта Девайс</h1>
-    <div class="catalog-item-wrapper">
-    <div class="relative-wrapper">
-      <a class="selfy-rod-img" href="catalog.html">
-        <img class="selfy-rod-img" src="img/slider-1.png" alt="Изображение товара «Палка для сэлфи»" width="425" height="545">
+    <!--Блок с картинкой #1-->
+    <section class="catalog-item1">
+    <div>
+      <a class="index-catalog-img" href="catalog.html">
+        <img class="index-catalog-img" src="img/slider-1.png" alt="Изображение товара «Палка для сэлфи»" width="384" height="486">
       </a>
     </div>
     <span class="white-decorative-line"></span>
@@ -81,28 +86,15 @@
         <ul class="catalog-item-description">
           <li class="add-title font-gilroy">Делай селфи, <br>
           как Бен Стиллер!
-        </li>
+          </li>
           <li class="selfy-rod-description">Самая длинная палка для селфи доступна в нашем магазине.<br>
-            Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+            Восемь (Восемь, Карл!) метров длинной и весом всего 5 килограмм.
           </li>
         </ul>
-        <div class="carousel-detail-wrapper">
-          <span class="item-detail font-gilroy">
-           <a class="button-back" href="#">Подробнее</a>
-          </span>
-          <div class="carousel">
-            <input type="radio" id="img-1"
-                   name="contact" value="email" checked>
-            <label for="img-1"></label>
-
-            <input type="radio" id="img-2"
-                   name="contact" value="phone">
-            <label for="img-2"></label>
-
-            <input type="radio" id="img-3"
-                   name="contact" value="mail">
-            <label for="img-3"></label>
-          </div>
+        <div class="detail-wrapper">
+           <a class="detail-link button-back" href="#">
+             <span class="detail-link">Подробнее </span>
+           </a>
         </div>
 
         <ul class="catalog-item-features">
@@ -112,8 +104,85 @@
           <!--Может стоит удалить Span и оставить только ссылку?-->
         </ul>
       </div>
+    </section>
+    <!--Блок с картинкой #1-->
+
+    <!--Блок с картинкой #2-->
+    <section class="catalog-item2 visually-hidden">
+      <div>
+        <a class="index-catalog-img" href="catalog.html">
+          <img class="index-catalog-img" src="img/slider-2.png" alt="Изображение товара «Палка для сэлфи»" width="345" height="485">
+        </a>
+      </div>
+      <span class="white-decorative-line"></span>
+      <h2 class="visually-hidden">Фитнес-браслет</h2>
+      <div class="item-description-wrapper">
+        <ul class="catalog-item-description">
+          <li class="add-title font-gilroy">Худеем<br>
+            правильно!
+          </li>
+          <li class="selfy-rod-description">Мотивирующие фитнес-браслеты помогут найти в себе силы<br>
+            не пропускать занятия и соблюдать диету.
+          </li>
+        </ul>
+        <div class="detail-wrapper">
+          <a class="detail-link button-back" href="#">
+            <span class="detail-link">Подробнее </span>
+          </a>
+        </div>
+
+        <ul class="catalog-item-features">
+          <li class="item-feature font-gilroy">48 часов <span><a href="#">Без подзарядки</a></span></li>
+        </ul>
+      </div>
+    </section>
+    <!--Блок с картинкой #2-->
+
+    <!--Блок с картинкой #3-->
+    <section class="catalog-item3 visually-hidden">
+      <div>
+        <a class="index-catalog-img index-catalog-img3" href="catalog.html">
+          <img class="index-catalog-img index-catalog-img3" src="img/slider-3.png" alt="Изображение товара «Палка для сэлфи»" width="526" height="334">
+        </a>
+      </div>
+      <span class="white-decorative-line"></span>
+      <h2 class="visually-hidden">Квадрокоптер</h2>
+      <div class="item-description-wrapper">
+        <ul class="catalog-item-description">
+          <li class="add-title font-gilroy">Порхает как бабочка,<br>
+            жалит как пчела!
+          </li>
+          <li class="selfy-rod-description">Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
+            мощным лазером, замаскированным под стандартную камеру.
+          </li>
+        </ul>
+        <div class="detail-wrapper">
+          <a class="detail-link button-back" href="#">
+            <span class="detail-link">Подробнее </span>
+          </a>
+        </div>
+
+        <ul class="catalog-item-features">
+          <li class="item-feature font-gilroy">800 м<span><a href="#">Дальность полета</a></span></li>
+          <li class="item-feature font-gilroy">50 м<span><a href="#">Радиус поражения</a></span></li>
+        </ul>
+      </div>
+    </section>
+    <!--Блок с картинкой #3-->
+    <div class="carousel-wrapper">
+      <div class="carousel">
+        <label for="img-1">
+          <input type="radio" id="img-1" name="carousel" checked>
+        </label>
+        <label for="img-2">
+          <input type="radio" id="img-2" name="carousel" >
+        </label>
+        <label for="img-3">
+          <input type="radio" id="img-3" name="carousel">
+        </label>
+      </div>
     </div>
-    <!--Карусель для смены картинок палки для сэлфи-->
+
     <section class="catalog-popular">
       <h3 class="visually-hidden">Популярные разделы каталога</h3>
       <ul class="popular-items">
@@ -146,104 +215,59 @@
 
     <section class="service-main">
       <h3 class="visually-hidden">Доставка, гарантия, кредит</h3>
-      <ul class="services-list">
+      <ul class="services-list font-gilroy">
         <li>
-          <button class="button active-service font-gilroy" type="button">Доставка</button>
+          <button class="button delivery-button services-active" type="button">Доставка</button>
         </li>
         <li>
-          <button class="button-back" type="button">Гарантия</button>
+          <button class="button-back warranty-button" type="button">Гарантия</button>
         </li>
         <li>
-          <button class="button-back" type="button">Кредит</button>
+          <button class="button-back credit-button" type="button">Кредит</button>
         </li>
       </ul>
 
       <!--Изменяющиеся поля Доставка, Кредит, Гарантия-->
 
-      <div class="delivery-wrapper">
-        <strong  class="font-gilroy">Доставка</strong>
-        <p>Мы с удовольствием доставим ваш товар прямо к вашему <br>
-          подъезду совершенно бесплатно! Ведь мы неплохо <br>
-          заработаем, поднимая его на ваш этаж.
-        </p>
-        <span class="delivery-img"></span>
-      </div>
-      <div class="warranty-wrapper visually-hidden">
-        <strong class="font-gilroy">Гарантия</strong>
-        <p>Если из-за возгорания купленного у нас товара у вас сгорит <br>
-          дом — не переживайте, мы выдадим вам новый. <br>
-          Товар, не дом, конечно же.
-        </p>
-        <span class="warranty-img"></span>
-        <button class="inactive-button" type="button">Гарантия</button>
-      </div>
-      <div class="credit-wrapper visually-hidden">
-        <strong  class="font-gilroy">Кредит</strong>
-        <p>Залезть в долговую яму стало проще! Кредитные <br>
-          консультанты подберут для вас наиболее выгодные <br>
-          условия кредита. Выгодные для нашего банка, разумеется.
-        </p>
-        <span class="credit-img"></span>
-        <button class="inactive-button" type="button">Кредит</button>
-      </div>
-      <span class="delivery-image"></span>
+        <div class="delivery-wrapper">
+          <div>
+            <strong  class="font-gilroy">Доставка</strong>
+            <p>Мы с удовольствием доставим ваш товар прямо к вашему <br>
+              подъезду совершенно бесплатно! Ведь мы неплохо <br>
+              заработаем, поднимая его на ваш этаж.
+            </p>
+          </div>
+            <span class="delivery-image services-image"></span>
+        </div>
+        <div class="warranty-wrapper visually-hidden">
+          <div>
+            <strong class="font-gilroy">Гарантия</strong>
+            <p>Если из-за возгорания купленного у нас товара у вас сгорит <br>
+              дом — не переживайте, мы выдадим вам новый. <br>
+              Товар, не дом, конечно же.
+            </p>
+          </div>
+          <span class="warranty-image services-image"></span>
+        </div>
+        <div class="credit-wrapper visually-hidden">
+          <div>
+            <strong  class="font-gilroy">Кредит</strong>
+            <p>Залезть в долговую яму стало проще! Кредитные <br>
+              консультанты подберут для вас наиболее выгодные <br>
+              условия кредита. Выгодные для нашего банка, разумеется.
+            </p>
+          </div>
+            <span class="credit-image services-image"></span>
+        </div>
     </section>
-
-    <!--Форма доставки-->
-    <section class="visually-hidden">
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <div class="delivery-name-wrapper">
-          <label for="name">Ваше имя</label>
-          <input id="name" type="text" name="name" value="Имя Фамилия">
-        </div>
-        <div class="delivery-email-wrapper">
-          <label for="email">Ваш e-mail:</label>
-          <input id="email" type="email" name="email" value="email@example.com">
-        </div>
-        <div class="delivery-textarea-wrapper">
-          <label for="mail-body">Текст письма:</label>
-          <textarea name="mail-body" id="mail-body" cols="30" rows="10"></textarea>
-        </div>
-        <button type="submit">Отправить</button>
-        <button type="button"><img src="img/svg/modal-close.svg" alt="Закрыть форму доставки"></button>
-      </form>
-    </section>
-    <!--Конец формы доставки-->
 
     <section class="partners-logos">
       <h3 class="visually-hidden">Логотипы партнеров</h3>
-      <a href="#"><img class="img-logo-DJI" src="img/logo-1.png" alt="Логотип компании «DJI»" width="260" height="100"></a>
-      <a href="#"><img class="img-logo-SP" src="img/logo-3.png" alt="Логотип компании «SP Gadgets»" width="260" height="100"></a>
-      <a href="#"><img class="img-logo-GoPro" src="img/logo-3.png" alt="Логотип компании «Go Pro»" width="260" height="100"></a>
-      <a href="#"><img class="img-logo-Vive" src="img/logo-4.png" alt="Логоти компании «Vive»" width="260" height="100"></a>
+      <a href="#"><img class="img-logo-DJI" src="img/logo-1.png" alt="Логотип компании «DJI»" width="260" height="100" onmouseover="this.src='img/logo-1-color.png'; this.width=260;this.height=100;" onmouseout="this.src='img/logo-1.png'; this.width=260;this.height=100;"></a>
+      <a href="#"><img class="img-logo-SP" src="img/logo-2.png" alt="Логотип компании «SP Gadgets»" width="260" height="100" onmouseover="this.src='img/logo-2-color.png'; this.width=260;this.height=100;" onmouseout="this.src='img/logo-2.png'; this.width=260;this.height=100;"></a>
+      <a href="#"><img class="img-logo-GoPro" src="img/logo-3.png" alt="Логотип компании «Go Pro»" width="260" height="100" onmouseover="this.src='img/logo-3-color.png'; this.width=260;this.height=100;" onmouseout="this.src='img/logo-3.png'; this.width=260;this.height=100;"></a>
+      <a href="#"><img class="img-logo-Vive" src="img/logo-4.png" alt="Логоти компании «Vive»" width="260" height="100" onmouseover="this.src='img/logo-4-color.png'; this.width=260;this.height=100;" onmouseout="this.src='img/logo-4.png'; this.width=260;this.height=100;"></a>
     </section>
-
-
-
-
-    <!--КОМЕНТЫ ОТ НАСТАВНИКА-->
-    <!--Подключить Нормалайз-->
-    <!--Подключить локально шрифты-->
-    <!--Скачать PSD-макет со шрифтам-->
-    <!--Класы в нижнем регистре-->
-    <!--Называть page-footer, page-header-->
-    <!--Название класов для шрифтов-->
-    <!--Поудалять ненужные стили !!! font-style: normal; font-stretch: normal;  text-align: left; filters, objectfeed-contain, letter-spacing 0.17 не ставить-->
-
-    <!--На сдачу-->
-    <!--Подключить два ЦСС только-->
-    <!--Минифицировать Normalize-->
-
-
-    <!--Класс h1-catalog на page-title-->
-    <!--Не задавать тексту ширину и высоту (тольок кнопки и картинки) избегать высоту и ширину-->
-    <!--Всем секшенам поставить класы-->
-
-    <!--Пересмотреть лекцио по разметке (кнопка ссылка кнопкой или ссылкой) поменять кнопки на ссылку (открыть карту - кнопка)
-    попапы всегда кнопки, переходы на страницы ссылки-->
-    <!---->
-    <!---->
-    <!---->
 
     <section class="about-main">
       <div class="about-us-container">
@@ -265,19 +289,44 @@
         <h3>Контакты</h3>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете<br> проверить работоспособность покупки.
           Всякое бывает.</p>
-        <a href="#">
           <img class="map-img" src="img/map.png" alt="Адрес нашего местоположения. город Москва, улица Строителей, 15" width="560" height="222">
-        </a>
-        <img class="visually-hidden" src="img/map-big.png" alt="Увеличеная карта местоположения" width="960" height="559">
-        <button class="button map-close visually-hidden"><img src="img/svg/modal-close.svg" alt="Кнопка закрытия увеличеной карты"></button>
-        <button class="button-back font-gilroy" type="button">Напишите нам</button>
+        <button class="button-back font-gilroy contact-us" type="button">Напишите нам</button>
       </div>
+      <!--Форма обратной связи-->
+      <section class="modal contact-us-form visually-hidden">
+      <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="name-email-wrapper">
+          <div class="contact-name-wrapper">
+            <label class="font-gilroy" for="name">Ваше имя:</label>
+            <input id="name" type="text" name="name" placeholder="Имя Фамилия" onfocus="this.value=''">
+          </div>
+          <div class="contact-email-wrapper">
+            <label class="font-gilroy" for="email">Ваш e-mail:</label>
+            <input id="email" type="email" name="email" placeholder="email@example.com" onfocus="this.value=''">
+          </div>
+        </div>
+        <div class="contact-textarea-wrapper">
+          <label class="font-gilroy" for="mail-body">Текст письма:</label>
+          <textarea class="mail-body" name="mail-body" id="mail-body" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+        </div>
+        <button class="button-back font-gilroy" type="submit">Отправить</button>
+        <button class="contact-modal-close" type="button"><img src="img/svg/modal-close.svg" alt="Закрыть форму доставки"></button>
+      </form>
+    </section>
+
+    </section>
+    <section class="modal modal-map visually-hidden">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043705228!2d30.320889251501498!3d59.938794181787244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sua!4v1571322288331!5m2!1sru!2sua" width="960" height="559" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      <button class="modal-close map-modal-close"><img src="img/svg/modal-close.svg" alt="Кнопка закрытия увеличеной карты"></button>
     </section>
   </main>
 
   <footer class="page-footer">
     <div class="footer-wrapper">
-      <img class="footer-logo" src="img/svg/logo-footer.svg" alt="«Логотип магазина Девайс»">
+      <a href="index.html">
+       <img class="footer-logo" src="img/svg/logo-footer.svg" alt="«Логотип магазина Девайс»">
+      </a>
       <p>г. Москва, ул. Строителей, 15</p>
     </div>
     <div class="footer-wrapper">
@@ -305,17 +354,172 @@
         <button class="modal-login" type="button">Войти</button>
         <!--Здесь будет форма-->
         <span class="modal-close"></span>
-        <a class="button" href="#">Сравнить</a>
+        <a class="button compare-button" href="#">Сравнить</a>
         <button class="footer-cart-button" type="button">Корзина</button>
       </section>
-
+      <div class="footer-contacts">
       <p>Тел.: +7 (495) 495-95-95</p>
-      <a href="https://htmlacademy.ru">
-        <img src="img/svg/logo-htmlacademy.svg" alt="Сделано в HTML-Academy" width="27" height="35">
-      </a>
-      <!--<span class="yellow-decorative-line"></span>-->
+        <a href="https://htmlacademy.ru">
+          <img src="img/svg/logo-htmlacademy.svg" alt="Сделано в HTML-Academy" width="27" height="35">
+        </a>
+      </div>
+      <span class="yellow-decorative-line"></span>
     </div>
   </footer>
   </div>
+
+  <script>
+
+    /*Форма обратной связи*/
+    let contactUs = document.querySelector(".contact-us");
+    let openContactUs = document.querySelector(".contact-us-form");
+    let close = document.querySelector(".contact-modal-close");
+    let form = document.querySelector(".contact-form");
+    let name = openContactUs.querySelector("[name=name]");
+    let email = openContactUs.querySelector("[name=email]");
+
+
+    contactUs.addEventListener("click", function (evt) {
+      evt.preventDefault();
+        openContactUs.classList.remove("visually-hidden");
+        name.focus();
+    });
+
+
+    close.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        openContactUs.classList.add("visually-hidden");
+    });
+
+    form.addEventListener("submit", function (evt) {
+
+        if (!name.value || !email.value) {
+            evt.preventDefault();
+            alert("Заполните имя и адрес почты для отправки")
+        } else  {
+            localStorage.setItem("name", name.value);
+            localStorage.setItem("name", email.value);
+        }
+    });
+    /*Форма обратной связи*/
+
+    /*Доставка-гарантия-кредит*/
+    let deliveryButton = document.querySelector(".delivery-button");
+    let deliveryAdd = document.querySelector(".delivery-wrapper");
+
+    let warrantyButton = document.querySelector(".warranty-button");
+    let warrantyAdd = document.querySelector(".warranty-wrapper");
+
+    let creditButton = document.querySelector(".credit-button");
+    let creditAdd = document.querySelector(".credit-wrapper");
+
+
+    deliveryButton.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        deliveryButton.classList.add("services-active");
+        deliveryAdd.classList.remove("visually-hidden");
+        deliveryButton.classList.remove("button-back");
+        warrantyButton.classList.remove("services-active");
+        warrantyAdd.classList.add("visually-hidden");
+        warrantyButton.classList.add("button-back");
+        creditButton.classList.remove("services-active");
+        creditAdd.classList.add("visually-hidden");
+        creditButton.classList.add("button-back");
+
+    });
+
+    warrantyButton.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        warrantyButton.classList.add("services-active");
+        warrantyAdd.classList.remove("visually-hidden");
+        warrantyButton.classList.remove("button-back");
+        deliveryAdd.classList.add("visually-hidden");
+        deliveryButton.classList.remove("services-active");
+        deliveryButton.classList.add("button-back");
+        creditButton.classList.remove("services-active");
+        creditAdd.classList.add("visually-hidden");
+        creditButton.classList.add("button-back");
+
+    });
+
+    creditButton.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        creditButton.classList.add("services-active");
+        creditAdd.classList.remove("visually-hidden");
+        creditButton.classList.remove("button-back");
+        warrantyButton.classList.remove("services-active");
+        warrantyAdd.classList.add("visually-hidden");
+        warrantyButton.classList.add("button-back");
+        deliveryAdd.classList.add("visually-hidden");
+        deliveryButton.classList.remove("services-active");
+        deliveryButton.classList.add("button-back");
+    });
+    /*Доставка-гарантия-кредит*/
+
+    /*Слайдер товаров в индексе*/
+
+    let slide1 = document.querySelector("[id=img-1]");
+    let slide2 = document.querySelector("[id=img-2]");
+    let slide3 = document.querySelector("[id=img-3]");
+
+    let catalogItem1 = document.querySelector(".catalog-item1");
+    let catalogItem2 = document.querySelector(".catalog-item2");
+    let catalogItem3 = document.querySelector(".catalog-item3");
+
+    let decorative01 = document.querySelector(".decorative-01");
+    let decorative02 = document.querySelector(".decorative-02");
+    let decorative03 = document.querySelector(".decorative-03");
+
+    slide1.addEventListener("click", function (evt) {
+        catalogItem1.classList.remove("visually-hidden");
+        catalogItem2.classList.add("visually-hidden");
+        catalogItem3.classList.add("visually-hidden");
+        decorative01.classList.remove("visually-hidden");
+        decorative02.classList.add("visually-hidden");
+        decorative03.classList.add("visually-hidden");
+    });
+
+    slide2.addEventListener("click", function (evt) {
+        catalogItem2.classList.remove("visually-hidden");
+        catalogItem3.classList.add("visually-hidden");
+        catalogItem1.classList.add("visually-hidden");
+        decorative02.classList.remove("visually-hidden");
+        decorative03.classList.add("visually-hidden");
+        decorative01.classList.add("visually-hidden");
+    });
+
+    slide3.addEventListener("click", function (evt) {
+        catalogItem3.classList.remove("visually-hidden");
+        catalogItem2.classList.add("visually-hidden");
+        catalogItem1.classList.add("visually-hidden");
+        decorative03.classList.remove("visually-hidden");
+        decorative02.classList.add("visually-hidden");
+        decorative01.classList.add("visually-hidden");
+    });
+
+
+    /*Слайдер товаров в индексе*/
+
+
+    /*Увеличение карты*/
+    let mapOpen = document.querySelector(".map-img");
+    let modalMap = document.querySelector(".modal-map");
+    let mapClose = document.querySelector(".map-modal-close");
+
+    mapOpen.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        modalMap.classList.remove("visually-hidden");
+
+    });
+
+    mapClose.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        modalMap.classList.add("visually-hidden");
+
+    });
+    /*Увеличение карты*/
+
+  </script>
+
   </body>
 </html>

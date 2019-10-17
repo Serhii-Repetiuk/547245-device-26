@@ -4,6 +4,12 @@
   padding-left: 0;
 }
 
+.catalog-main h3 {
+  font-size: 16px;
+  font-weight: 800;
+  font-family: 'Gilroy', sans-serif;
+}
+
 .catalog-h1 {
   padding-top: 44px;
   padding-bottom: 30px;
@@ -27,6 +33,37 @@
   background-color: #ebebeb;
 }
 
+.add-item {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  height: 380px;
+}
+
+.add-item button  { background-color: red;
+  border: none;
+
+}
+
+.cart-add {
+  background-color: #d9d9d9;
+  width: 200px;
+  height: 8px;
+}
+
+.сompare-add {
+  background-color: #d9d9d9;
+  width: 144px;
+  height: 13px;
+  opacity: 0.5;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 2.77;
+  letter-spacing: 0.13px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+}
+
 .nav-arrow {
   width: 4px;
   height: 7px;
@@ -46,12 +83,9 @@
 }
 
 .filter-header {
-  margin-bottom: 69px;
-  font-size: 16px;
-  font-weight: 800;
-  line-height: 1.5;
+  margin-left: 200px;
+  text-transform: uppercase;
   letter-spacing: 3.2px;
-  background-color: #d9d9d9;
 }
 
 .divider {
@@ -122,13 +156,25 @@
 .filters {
   display: flex;
   flex-direction: column;
-  padding-left: 199px;
-  padding-right: 67px;
   background-color: #ebebeb;
 }
 
 .filter-color li {
   margin-bottom: 24px;
+}
+
+.filters-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-left: 199px;
+  padding-right: 67px;
+}
+
+.decorative-filter-wrapper {
+  background-color: #d9d9d9;
+  padding-top: 5px;
+  padding-bottom: 3px;
+  margin-bottom: 69px;
 }
 
 /*Стили для чекбоксов*/
@@ -161,7 +207,10 @@
 }
 
 .sorting-wrapper h3 {
- margin-right: 40px;
+  align-self: center;
+  margin-right: 40px;
+  text-transform: uppercase;
+  letter-spacing: 3.2px;
 }
 
 .sorting-list {
@@ -247,8 +296,9 @@
 
 
 .pagination {
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 52px;
+  margin-right: 52px;
+  margin-bottom: 77px;
   display: flex;
   justify-content: space-around;
   background-color: #ebebeb;
