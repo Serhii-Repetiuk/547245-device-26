@@ -53,11 +53,11 @@ a {
   flex-direction: column;
 }
 
-.navigation li:hover {
+.navigation a:hover {
   opacity: 0.6;
 }
 
-.navigation li:active {
+.navigation a:active {
   opacity: 0.3;
 }
 
@@ -164,21 +164,21 @@ a {
   flex-direction: column;
   flex-wrap: wrap;
   align-content: flex-start;
-  width: 1290px;
   height: 205px;
   background-color: #f7e296;
   left: -60px;
   position: absolute;
+  width: 1180px;
   font-size: 15px;
   font-weight: 300;
   line-height: 2.4;
   letter-spacing: 0.15px;
-  z-index: 1;
 }
 
 .navigation-catalog-wrapper:hover .catalog-sub-menu {
   display: flex;
 }
+
 
 .catalog-sub-menu li {
   padding-top: 10px;
@@ -187,11 +187,11 @@ a {
   padding-right: 25px;
 }
 
-.catalog-sub-menu li:hover {
+.catalog-sub-menu a:hover {
   opacity: 0.6;
 }
 
-.catalog-sub-menu li:active {
+.catalog-sub-menu a:active {
   opacity: 0.3;
 }
 
