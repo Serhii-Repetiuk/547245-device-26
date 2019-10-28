@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
@@ -10,7 +10,6 @@
 
 </head>
   <body>
-  <div class="wrapper">
   <header class="page-header">
       <a href="index.html">
        <img class="main-header-logo" src="img/svg/device.svg" alt="«Логотип магазина Девайс»" width="187" height="45">
@@ -42,8 +41,8 @@
       <div class="user-activity-wrapper">
         <div class="search-wrapper">
           <span class="search-img" aria-label="Картинка-увелечительного стекла"></span>
-          <label for="search" aria-label="Поиск по сайту"></label>
-          <input class="search" id="search" type="search" value="Поиск по сайту" alt="Поле поиска">
+          <label for="search" aria-label="Поиск по сайту"><input class="search" id="search" type="search" value="Поиск по сайту" alt="Поле поиска"></label>
+          <button class="search-button visually-hidden" type="button"><span>Найти</span></button>
         </div>
         <ul class="header-user-activity">
           <li class="login-list">
@@ -71,118 +70,121 @@
     </div>
   </header>
 
+
   <main class="page-main">
-    <h1 class="visually-hidden">Главная страница сайта Девайс</h1>
-    <!--Блок с картинкой #1-->
-    <section class="catalog-item1">
-    <div>
-      <a class="index-catalog-img" href="catalog.html">
-        <img class="index-catalog-img" src="img/slider-1.png" alt="Изображение товара «Палка для сэлфи»" width="384" height="486">
-      </a>
-    </div>
-    <span class="white-decorative-line"></span>
-    <h2 class="visually-hidden">Палка для селфи</h2>
-      <div class="item-description-wrapper">
-        <ul class="catalog-item-description">
-          <li class="add-title font-gilroy">Делай селфи, <br>
-          как Бен Стиллер!
-          </li>
-          <li class="selfy-rod-description">Самая длинная палка для селфи доступна в нашем магазине.<br>
-            Восемь (Восемь, Карл!) метров длинной и весом всего 5 килограмм.
-          </li>
-        </ul>
-        <div class="detail-wrapper">
-           <a class="detail-link button-back" href="#">
-             <span class="detail-link">Подробнее </span>
-           </a>
-        </div>
-
-        <ul class="catalog-item-features">
-          <li class="item-feature font-gilroy">8,5 м <span><a href="#">Длина палки</a></span></li>
-          <li class="item-feature font-gilroy">5 кг <span><a href="#">Вес палки</a></span></li>
-          <li class="item-feature font-gilroy">Карбон <span><a href="#">Материал</a></span></li>
-          <!--Может стоит удалить Span и оставить только ссылку?-->
-        </ul>
-      </div>
-    </section>
-    <!--Блок с картинкой #1-->
-
-    <!--Блок с картинкой #2-->
-    <section class="catalog-item2 visually-hidden">
+    <div class="wrapper">
+      <h1 class="visually-hidden">Главная страница сайта Девайс</h1>
+      <!--Блок с картинкой #1-->
+      <section class="catalog-item1">
       <div>
         <a class="index-catalog-img" href="catalog.html">
-          <img class="index-catalog-img" src="img/slider-2.png" alt="Изображение товара «Палка для сэлфи»" width="345" height="485">
+          <img class="index-catalog-img index-catalog-img1" src="img/slider-1.png" alt="Изображение товара «Палка для сэлфи»" width="384" height="486">
         </a>
       </div>
       <span class="white-decorative-line"></span>
-      <h2 class="visually-hidden">Фитнес-браслет</h2>
-      <div class="item-description-wrapper">
-        <ul class="catalog-item-description">
-          <li class="add-title font-gilroy">Худеем<br>
-            правильно!
-          </li>
-          <li class="selfy-rod-description">Мотивирующие фитнес-браслеты помогут найти в себе силы<br>
-            не пропускать занятия и соблюдать диету.
-          </li>
-        </ul>
-        <div class="detail-wrapper">
-          <a class="detail-link button-back" href="#">
-            <span class="detail-link">Подробнее </span>
+      <h2 class="visually-hidden">Палка для селфи</h2>
+        <div class="item-description-wrapper">
+          <ul class="catalog-item-description">
+            <li class="add-title font-gilroy">Делай селфи, <br>
+            как Бен Стиллер!
+            </li>
+            <li class="selfy-rod-description">Самая длинная палка для селфи доступна в нашем магазине.<br>
+              Восемь (Восемь, Карл!) метров длинной и весом всего 5 килограмм.
+            </li>
+          </ul>
+          <div class="detail-wrapper">
+             <a class="button" href="#">
+               <span class="detail-link">Подробнее</span>
+             </a>
+          </div>
+
+          <ul class="catalog-item-features">
+            <li class="item-feature font-gilroy">8,5 м <span><a href="#">Длина палки</a></span></li>
+            <li class="item-feature font-gilroy">5 кг <span><a href="#">Вес палки</a></span></li>
+            <li class="item-feature font-gilroy">Карбон <span><a href="#">Материал</a></span></li>
+            <!--Может стоит удалить Span и оставить только ссылку?-->
+          </ul>
+        </div>
+      </section>
+      <!--Блок с картинкой #1-->
+
+      <!--Блок с картинкой #2-->
+      <section class="catalog-item2 visually-hidden">
+          <a class="index-catalog-img" href="catalog.html">
+            <img class="index-catalog-img index-catalog-img2" src="img/slider-2.png" alt="Изображение товара «Палка для сэлфи»" width="345" height="485">
+          </a>
+        <span class="white-decorative-line"></span>
+        <h2 class="visually-hidden">Фитнес-браслет</h2>
+        <div class="item-description-wrapper">
+          <ul class="catalog-item-description">
+            <li class="add-title font-gilroy">Худеем<br>
+              правильно!
+            </li>
+            <li class="selfy-rod-description">Мотивирующие фитнес-браслеты помогут найти в себе силы<br>
+              не пропускать занятия и соблюдать диету.
+            </li>
+          </ul>
+          <div class="detail-wrapper">
+            <a class="detail-link button" href="#">
+              <span class="detail-link">Подробнее </span>
+            </a>
+          </div>
+
+          <ul class="catalog-item-features">
+            <li class="item-feature font-gilroy">48 часов <span><a href="#">Без подзарядки</a></span></li>
+          </ul>
+        </div>
+      </section>
+      <!--Блок с картинкой #2-->
+
+      <!--Блок с картинкой #3-->
+      <section class="catalog-item3 visually-hidden">
+        <div>
+          <a class="index-catalog-img" href="catalog.html">
+            <img class="index-catalog-img index-catalog-img3" src="img/slider-3.png" alt="Изображение товара «Палка для сэлфи»" width="526" height="334">
           </a>
         </div>
+        <span class="white-decorative-line"></span>
+        <h2 class="visually-hidden">Квадрокоптер</h2>
+        <div class="item-description-wrapper">
+          <ul class="catalog-item-description">
+            <li class="add-title font-gilroy">Порхает как бабочка,<br>
+              жалит как пчела!
+            </li>
+            <li class="selfy-rod-description">Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
+              мощным лазером, замаскированным под стандартную камеру.
+            </li>
+          </ul>
+          <div class="detail-wrapper">
+            <a class="detail-link button" href="#">
+              <span class="detail-link">Подробнее </span>
+            </a>
+          </div>
 
-        <ul class="catalog-item-features">
-          <li class="item-feature font-gilroy">48 часов <span><a href="#">Без подзарядки</a></span></li>
-        </ul>
-      </div>
-    </section>
-    <!--Блок с картинкой #2-->
-
-    <!--Блок с картинкой #3-->
-    <section class="catalog-item3 visually-hidden">
+          <ul class="catalog-item-features">
+            <li class="item-feature font-gilroy">800 м<span><a href="#">Дальность полета</a></span></li>
+            <li class="item-feature font-gilroy">50 м<span><a href="#">Радиус поражения</a></span></li>
+          </ul>
+        </div>
+      </section>
+      <!--Блок с картинкой #3-->
       <div>
-        <a class="index-catalog-img index-catalog-img3" href="catalog.html">
-          <img class="index-catalog-img index-catalog-img3" src="img/slider-3.png" alt="Изображение товара «Палка для сэлфи»" width="526" height="334">
-        </a>
-      </div>
-      <span class="white-decorative-line"></span>
-      <h2 class="visually-hidden">Квадрокоптер</h2>
-      <div class="item-description-wrapper">
-        <ul class="catalog-item-description">
-          <li class="add-title font-gilroy">Порхает как бабочка,<br>
-            жалит как пчела!
-          </li>
-          <li class="selfy-rod-description">Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
-            мощным лазером, замаскированным под стандартную камеру.
-          </li>
-        </ul>
-        <div class="detail-wrapper">
-          <a class="detail-link button-back" href="#">
-            <span class="detail-link">Подробнее </span>
-          </a>
+        <div class="carousel-wrapper">
+          <div class="carousel">
+            <label for="img-1">
+              <input type="radio" id="img-1" name="carousel" checked>
+            </label>
+            <label for="img-2">
+              <input type="radio" id="img-2" name="carousel" >
+            </label>
+            <label for="img-3">
+              <input type="radio" id="img-3" name="carousel">
+            </label>
+          </div>
         </div>
+      </div>
 
-        <ul class="catalog-item-features">
-          <li class="item-feature font-gilroy">800 м<span><a href="#">Дальность полета</a></span></li>
-          <li class="item-feature font-gilroy">50 м<span><a href="#">Радиус поражения</a></span></li>
-        </ul>
-      </div>
-    </section>
-    <!--Блок с картинкой #3-->
-    <div class="carousel-wrapper">
-      <div class="carousel">
-        <label for="img-1">
-          <input type="radio" id="img-1" name="carousel" checked>
-        </label>
-        <label for="img-2">
-          <input type="radio" id="img-2" name="carousel" >
-        </label>
-        <label for="img-3">
-          <input type="radio" id="img-3" name="carousel">
-        </label>
-      </div>
     </div>
-
     <section class="catalog-popular">
       <h3 class="visually-hidden">Популярные разделы каталога</h3>
       <ul class="popular-items">
@@ -214,16 +216,23 @@
     </section>
 
     <section class="service-main">
+      <div class="wrapper">
       <h3 class="visually-hidden">Доставка, гарантия, кредит</h3>
       <ul class="services-list font-gilroy">
         <li>
-          <button class="button delivery-button services-active" type="button">Доставка</button>
+          <button class="delivery-button services-active" type="button">
+            <span>Доставка</span>
+          </button>
         </li>
         <li>
-          <button class="button-back warranty-button" type="button">Гарантия</button>
+          <button class="button warranty-button" type="button">
+            <span>Гарантия</span>
+          </button>
         </li>
         <li>
-          <button class="button-back credit-button" type="button">Кредит</button>
+          <button class="button credit-button" type="button">
+            <span>Кредит</span>
+          </button>
         </li>
       </ul>
 
@@ -259,17 +268,21 @@
           </div>
             <span class="credit-image services-image"></span>
         </div>
+      </div>
     </section>
 
     <section class="partners-logos">
-      <h3 class="visually-hidden">Логотипы партнеров</h3>
-      <a href="#"><img class="img-logo-DJI" src="img/logo-1.png" alt="Логотип компании «DJI»" width="260" height="100" onmouseover="this.src='img/logo-1-color.png'; this.width=260;this.height=100;" onmouseout="this.src='img/logo-1.png'; this.width=260;this.height=100;"></a>
-      <a href="#"><img class="img-logo-SP" src="img/logo-2.png" alt="Логотип компании «SP Gadgets»" width="260" height="100" onmouseover="this.src='img/logo-2-color.png'; this.width=260;this.height=100;" onmouseout="this.src='img/logo-2.png'; this.width=260;this.height=100;"></a>
-      <a href="#"><img class="img-logo-GoPro" src="img/logo-3.png" alt="Логотип компании «Go Pro»" width="260" height="100" onmouseover="this.src='img/logo-3-color.png'; this.width=260;this.height=100;" onmouseout="this.src='img/logo-3.png'; this.width=260;this.height=100;"></a>
-      <a href="#"><img class="img-logo-Vive" src="img/logo-4.png" alt="Логоти компании «Vive»" width="260" height="100" onmouseover="this.src='img/logo-4-color.png'; this.width=260;this.height=100;" onmouseout="this.src='img/logo-4.png'; this.width=260;this.height=100;"></a>
+      <div class="wrapper">
+        <h3 class="visually-hidden">Логотипы партнеров</h3>
+        <a href="#"><img class="logo-DJI" src="img/logo-1.png" alt=""></a>
+        <a href="#"><img class="logo-SP" src="img/logo-2.png" alt=""></a>
+        <a href="#"><img class="logo-GoPro" src="img/logo-3.png" alt=""></a>
+        <a href="#"><img class="logo-Vive" src="img/logo-4.png" alt=""></a>
+      </div>
     </section>
 
     <section class="about-main">
+      <div class="wrapper">
       <div class="about-us-container">
         <span class="black-decorative-line"></span>
         <h3>О нас</h3>
@@ -282,7 +295,9 @@
           <li><a href="#">Автотрейдинг</a></li>
           <li><a href="#">ЖелДорЭкспедиция</a></li>
         </ul>
-        <a class="button-back font-gilroy" href="#">Подробнее о нас</a>
+        <a class="button font-gilroy about-us" href="#">
+          <span>Подробнее о нас</span>
+        </a>
       </div>
       <div class="contacts">
         <span class="black-decorative-line"></span>
@@ -290,30 +305,34 @@
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете<br> проверить работоспособность покупки.
           Всякое бывает.</p>
           <img class="map-img" src="img/map.png" alt="Адрес нашего местоположения. город Москва, улица Строителей, 15" width="560" height="222">
-        <button class="button-back font-gilroy contact-us" type="button">Напишите нам</button>
+        <button class="button font-gilroy contact-us" type="button">
+          <span>Напишите нам</span>
+        </button>
       </div>
       <!--Форма обратной связи-->
       <section class="modal contact-us-form visually-hidden">
-      <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="name-email-wrapper">
-          <div class="contact-name-wrapper">
-            <label class="font-gilroy" for="name">Ваше имя:</label>
-            <input id="name" type="text" name="name" placeholder="Имя Фамилия" onfocus="this.value=''">
+        <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="name-email-wrapper">
+            <div class="contact-name-wrapper">
+              <label class="font-gilroy" for="name">Ваше имя:</label>
+              <input id="name" type="text" name="name" placeholder="Имя Фамилия" onfocus="this.value=''">
+            </div>
+            <div class="contact-email-wrapper">
+              <label class="font-gilroy" for="email">Ваш e-mail:</label>
+              <input id="email" type="email" name="email" placeholder="email@example.com" onfocus="this.value=''">
+            </div>
           </div>
-          <div class="contact-email-wrapper">
-            <label class="font-gilroy" for="email">Ваш e-mail:</label>
-            <input id="email" type="email" name="email" placeholder="email@example.com" onfocus="this.value=''">
+          <div class="contact-textarea-wrapper">
+            <label class="font-gilroy" for="mail-body">Текст письма:</label>
+            <textarea class="mail-body" name="mail-body" id="mail-body" cols="30" rows="10" placeholder="В свободной форме"></textarea>
           </div>
-        </div>
-        <div class="contact-textarea-wrapper">
-          <label class="font-gilroy" for="mail-body">Текст письма:</label>
-          <textarea class="mail-body" name="mail-body" id="mail-body" cols="30" rows="10" placeholder="В свободной форме"></textarea>
-        </div>
-        <button class="button-back font-gilroy" type="submit">Отправить</button>
-        <button class="contact-modal-close modal-close" type="button"><img src="img/svg/modal-close.svg" alt="Закрыть форму доставки"></button>
-      </form>
-    </section>
-
+          <button class="button font-gilroy" type="submit">
+            <span>Отправить</span>
+          </button>
+          <button class="contact-modal-close modal-close" type="button"><img src="img/svg/modal-close.svg" alt="Закрыть форму доставки"></button>
+        </form>
+      </section>
+      </div>
     </section>
     <section class="modal modal-map visually-hidden">
       <h2 class="visually-hidden">Как до нас добраться</h2>
@@ -323,11 +342,13 @@
   </main>
 
   <footer class="page-footer">
+    <div class="wrapper">
     <div class="footer-wrapper">
       <a href="index.html">
        <img class="footer-logo" src="img/svg/logo-footer.svg" alt="«Логотип магазина Девайс»">
       </a>
       <p>г. Москва, ул. Строителей, 15</p>
+      <span class="yellow-decorative-line"></span>
     </div>
     <div class="footer-wrapper">
     <section class="service-footer">
@@ -351,11 +372,20 @@
     </div>
     <div class="footer-wrapper">
       <section class="footer-user-activity">
-        <button class="modal-login" type="button">Войти</button>
-        <!--Здесь будет форма-->
-        <span class="modal-close"></span>
-        <a class="button compare-button" href="#">Сравнить</a>
-        <button class="footer-cart-button" type="button">Корзина</button>
+        <ul class="user-activity-list">
+          <li>
+            <span class="login-footer-img" aria-label="Картинки логин"></span>
+            <button class="modal-login" type="button">Войти</button>
+          </li>
+          <li>
+            <span class="compare-footer-img" aria-label="Картинка сравнения"></span>
+            <a class="compare-button" href="#">Сравнить</a>
+          </li>
+          <li>
+            <span class="cart-footer-img" aria-label="Картинка корзины"></span>
+            <button class="footer-cart-button" type="button">Корзина</button>
+          </li>
+        </ul>
       </section>
       <div class="footer-contacts">
       <p>Тел.: +7 (495) 495-95-95</p>
@@ -363,163 +393,9 @@
           <img src="img/svg/logo-htmlacademy.svg" alt="Сделано в HTML-Academy" width="27" height="35">
         </a>
       </div>
-      <span class="yellow-decorative-line"></span>
+    </div>
     </div>
   </footer>
-  </div>
-
-  <script>
-
-    /*Форма обратной связи*/
-    let contactUs = document.querySelector(".contact-us");
-    let openContactUs = document.querySelector(".contact-us-form");
-    let close = document.querySelector(".contact-modal-close");
-    let form = document.querySelector(".contact-form");
-    let name = openContactUs.querySelector("[name=name]");
-    let email = openContactUs.querySelector("[name=email]");
-
-
-    contactUs.addEventListener("click", function (evt) {
-      evt.preventDefault();
-        openContactUs.classList.remove("visually-hidden");
-        name.focus();
-    });
-
-
-    close.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        openContactUs.classList.add("visually-hidden");
-    });
-
-    form.addEventListener("submit", function (evt) {
-
-        if (!name.value || !email.value) {
-            evt.preventDefault();
-            alert("Заполните имя и адрес почты для отправки")
-        } else  {
-            localStorage.setItem("name", name.value);
-            localStorage.setItem("name", email.value);
-        }
-    });
-    /*Форма обратной связи*/
-
-    /*Доставка-гарантия-кредит*/
-    let deliveryButton = document.querySelector(".delivery-button");
-    let deliveryAdd = document.querySelector(".delivery-wrapper");
-
-    let warrantyButton = document.querySelector(".warranty-button");
-    let warrantyAdd = document.querySelector(".warranty-wrapper");
-
-    let creditButton = document.querySelector(".credit-button");
-    let creditAdd = document.querySelector(".credit-wrapper");
-
-
-    deliveryButton.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        deliveryButton.classList.add("services-active");
-        deliveryAdd.classList.remove("visually-hidden");
-        deliveryButton.classList.remove("button-back");
-        warrantyButton.classList.remove("services-active");
-        warrantyAdd.classList.add("visually-hidden");
-        warrantyButton.classList.add("button-back");
-        creditButton.classList.remove("services-active");
-        creditAdd.classList.add("visually-hidden");
-        creditButton.classList.add("button-back");
-
-    });
-
-    warrantyButton.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        warrantyButton.classList.add("services-active");
-        warrantyAdd.classList.remove("visually-hidden");
-        warrantyButton.classList.remove("button-back");
-        deliveryAdd.classList.add("visually-hidden");
-        deliveryButton.classList.remove("services-active");
-        deliveryButton.classList.add("button-back");
-        creditButton.classList.remove("services-active");
-        creditAdd.classList.add("visually-hidden");
-        creditButton.classList.add("button-back");
-
-    });
-
-    creditButton.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        creditButton.classList.add("services-active");
-        creditAdd.classList.remove("visually-hidden");
-        creditButton.classList.remove("button-back");
-        warrantyButton.classList.remove("services-active");
-        warrantyAdd.classList.add("visually-hidden");
-        warrantyButton.classList.add("button-back");
-        deliveryAdd.classList.add("visually-hidden");
-        deliveryButton.classList.remove("services-active");
-        deliveryButton.classList.add("button-back");
-    });
-    /*Доставка-гарантия-кредит*/
-
-    /*Слайдер товаров в индексе*/
-
-    let slide1 = document.querySelector("[id=img-1]");
-    let slide2 = document.querySelector("[id=img-2]");
-    let slide3 = document.querySelector("[id=img-3]");
-
-    let catalogItem1 = document.querySelector(".catalog-item1");
-    let catalogItem2 = document.querySelector(".catalog-item2");
-    let catalogItem3 = document.querySelector(".catalog-item3");
-
-    let decorative01 = document.querySelector(".decorative-01");
-    let decorative02 = document.querySelector(".decorative-02");
-    let decorative03 = document.querySelector(".decorative-03");
-
-    slide1.addEventListener("click", function (evt) {
-        catalogItem1.classList.remove("visually-hidden");
-        catalogItem2.classList.add("visually-hidden");
-        catalogItem3.classList.add("visually-hidden");
-        decorative01.classList.remove("visually-hidden");
-        decorative02.classList.add("visually-hidden");
-        decorative03.classList.add("visually-hidden");
-    });
-
-    slide2.addEventListener("click", function (evt) {
-        catalogItem2.classList.remove("visually-hidden");
-        catalogItem3.classList.add("visually-hidden");
-        catalogItem1.classList.add("visually-hidden");
-        decorative02.classList.remove("visually-hidden");
-        decorative03.classList.add("visually-hidden");
-        decorative01.classList.add("visually-hidden");
-    });
-
-    slide3.addEventListener("click", function (evt) {
-        catalogItem3.classList.remove("visually-hidden");
-        catalogItem2.classList.add("visually-hidden");
-        catalogItem1.classList.add("visually-hidden");
-        decorative03.classList.remove("visually-hidden");
-        decorative02.classList.add("visually-hidden");
-        decorative01.classList.add("visually-hidden");
-    });
-
-
-    /*Слайдер товаров в индексе*/
-
-
-    /*Увеличение карты*/
-    let mapOpen = document.querySelector(".map-img");
-    let modalMap = document.querySelector(".modal-map");
-    let mapClose = document.querySelector(".map-modal-close");
-
-    mapOpen.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        modalMap.classList.remove("visually-hidden");
-
-    });
-
-    mapClose.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        modalMap.classList.add("visually-hidden");
-
-    });
-    /*Увеличение карты*/
-
-  </script>
-
+  <script src="js/index.js"></script>
   </body>
 </html>
