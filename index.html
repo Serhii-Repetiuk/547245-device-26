@@ -33,9 +33,9 @@
           </li>
         </ul>
         <ul class="navigation-list font-gilroy">
-          <li><a class="navigation-delivery" href="#">Доставка</a></li>
-          <li><a class="navigation-warranty" href="#">Гарантия</a></li>
-          <li><a class="navigation-contacts" href="#">Контакты</a></li>
+          <li class="navigation-list-item"><a class="navigation-delivery" href="#">Доставка</a></li>
+          <li class="navigation-list-item"><a class="navigation-warranty" href="#">Гарантия</a></li>
+          <li class="navigation-list-item"><a class="navigation-contacts" href="#">Контакты</a></li>
         </ul>
       </div>
       <div class="user-activity-wrapper">
@@ -46,17 +46,13 @@
         </div>
         <ul class="header-user-activity">
           <li class="login-list">
-            <span class="login-image" aria-label="Картинки логин"></span>
-            <button class="modal-login header-login-button" type="button">Войти</button>
-            <span class="modal-close"></span>
+            <button class="modal-login login-button" type="button">Войти</button>
           </li>
           <!--Здесь будет форма входа-->
           <li class="compare-list">
-            <span class="compare-img" aria-label="Картинка сравнения"></span>
             <a class="compare" href="#">Сравнить</a>
           </li>
           <li class="cart-list">
-            <span class="cart-img" aria-label="Картинка корзины"></span>
             <button class="cart" type="button">Корзина</button>
           </li>
         </ul>
@@ -274,10 +270,10 @@
     <section class="partners-logos">
       <div class="wrapper">
         <h3 class="visually-hidden">Логотипы партнеров</h3>
-        <a href="#"><img class="logo-DJI" src="img/logo-1.png" alt=""></a>
-        <a href="#"><img class="logo-SP" src="img/logo-2.png" alt=""></a>
-        <a href="#"><img class="logo-GoPro" src="img/logo-3.png" alt=""></a>
-        <a href="#"><img class="logo-Vive" src="img/logo-4.png" alt=""></a>
+        <a class="logo-DJI" href="#"><img class="logo-DJI-color" src="img/logo-1-color.png" alt="Логотип компании DJI" width="260" height="100"></a>
+        <a class="logo-SP" href="#"><img class="logo-SP-color" src="img/logo-2-color.png" alt="Логотип компании SP" width="260" height="100"></a>
+        <a class="logo-GoPro" href="#"><img class="logo-GoPro-color" src="img/logo-3-color.png" alt="Логотип компании GoPro" width="260" height="100"></a>
+        <a class="logo-Vive" href="#"><img class="logo-Vive-color" src="img/logo-4-color.png" alt="Логотип компании Vive" width="260" height="100"></a>
       </div>
     </section>
 
@@ -305,9 +301,9 @@
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете<br> проверить работоспособность покупки.
           Всякое бывает.</p>
           <img class="map-img" src="img/map.png" alt="Адрес нашего местоположения. город Москва, улица Строителей, 15" width="560" height="222">
-        <button class="button font-gilroy contact-us" type="button">
+          <button class="button font-gilroy contact-us" type="button">
           <span>Напишите нам</span>
-        </button>
+          </button>
       </div>
       <!--Форма обратной связи-->
       <section class="modal contact-us-form visually-hidden">
@@ -315,11 +311,11 @@
           <div class="name-email-wrapper">
             <div class="contact-name-wrapper">
               <label class="font-gilroy" for="name">Ваше имя:</label>
-              <input id="name" type="text" name="name" placeholder="Имя Фамилия" onfocus="this.value=''">
+              <input id="name" type="text" name="name" placeholder="Имя Фамилия">
             </div>
             <div class="contact-email-wrapper">
               <label class="font-gilroy" for="email">Ваш e-mail:</label>
-              <input id="email" type="email" name="email" placeholder="email@example.com" onfocus="this.value=''">
+              <input id="email" type="email" name="email" placeholder="email@example.com">
             </div>
           </div>
           <div class="contact-textarea-wrapper">
@@ -366,24 +362,21 @@
       <ul class="social">
         <li><a class="social-facebook" href="#"></a></li>
         <li><a class="social-instagram" href="#"></a></li>
-        <li><a class="social-twitter" href="#"></a></li>
+        <li><a class="social-vk" href="#"></a></li>
       </ul>
     </section>
     </div>
     <div class="footer-wrapper">
       <section class="footer-user-activity">
         <ul class="user-activity-list">
-          <li>
-            <span class="login-footer-img" aria-label="Картинки логин"></span>
-            <button class="modal-login" type="button">Войти</button>
+          <li class="login-list">
+            <button class="modal-login login-button" type="button">Войти</button>
           </li>
-          <li>
-            <span class="compare-footer-img" aria-label="Картинка сравнения"></span>
-            <a class="compare-button" href="#">Сравнить</a>
+          <li class="compare-list">
+            <a class="compare" href="#">Сравнить</a>
           </li>
-          <li>
-            <span class="cart-footer-img" aria-label="Картинка корзины"></span>
-            <button class="footer-cart-button" type="button">Корзина</button>
+          <li class="cart-list">
+            <button class="cart" type="button">Корзина</button>
           </li>
         </ul>
       </section>

@@ -20,6 +20,9 @@ a {
   margin: 0 auto;
 }
 
+.font-gilroy {font-family: 'Gilroy', sans-serif;}
+
+
 .button {
   font-family: 'Gilroy', sans-serif;
   position: relative;
@@ -74,8 +77,6 @@ a {
 /*fonts*/
 
 
-.font-gilroy {font-family: 'Gilroy', sans-serif;}
-
 
 
 .carousel-wrapper {
@@ -127,7 +128,6 @@ a {
 }
 
 .navigation-list {
-  margin: 0;
   display: flex;
   justify-content: flex-start;
   flex-direction: row;
@@ -156,13 +156,12 @@ a {
 
 
 .navigation-list a {
+  display: inline-block;
   vertical-align: middle;
   font-size: 19px;
   font-weight: 800;
   letter-spacing: 5.2px;
 }
-
-
 
 .navigation-delivery{
   vertical-align: middle;
@@ -296,6 +295,17 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.new-catalog-item {
+  right: 25px;
+  top: 25px;
+  display: block;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background-image: url("../img/svg/new-catalog-item.svg");
+  transform: rotate(35deg);
 }
 
 .index-catalog-img1 {
@@ -520,9 +530,12 @@ a {
   flex-direction: column;
 }
 
-.map-img {
+
+.map-img:hover {
   cursor: pointer;
-  padding-bottom: 17px;
+  box-shadow: 0px 10px 20px 0 rgba(4, 6, 6, 0.2);
+  transition-duration: 0.2s;
+  z-index: 2;
 }
 
 .contact-us-button,
@@ -627,12 +640,17 @@ a {
   justify-content: space-between;
 }
 
-
-.header-user-activity li:hover {
+.user-name:hover,
+.compare:hover,
+.cart:hover,
+.login-button:hover{
   opacity: 0.6;
 }
 
-.header-user-activity li:active {
+.user-name:active,
+.compare:active,
+.cart:active,
+.login-button:active{
   opacity: 0.3;
 }
 
@@ -686,27 +704,6 @@ a {
   opacity: 0.3;
 }
 
-
-.compare-img {
-  display: inline-block;
-  vertical-align: middle;
-  width: 12px;
-  height: 12px;
-  background-repeat: no-repeat;
-  background-image: url("../img/svg/compare.svg");
-  background-size: cover;
-}
-
-.cart-img {
-  display: inline-block;
-  vertical-align: middle;
-  width: 13px;
-  height: 13px;
-  background-repeat: no-repeat;
-  background-image: url("../img/svg/cart.svg");
-  background-size: cover;
-}
-
 .user-name {
   margin-left: 15px;
   margin-right: 10px;
@@ -715,30 +712,39 @@ a {
 }
 
 .login-list {
+  position: relative;
   display: flex;
   box-sizing: border-box;
   margin-right: 90px;
+  padding-left: 14px;
 }
 
-.compare-list {
-  margin: auto;
-}
-
-.cart-list {
-  margin: auto;
-}
-
-
-.login-image {
-  margin: auto;
-  display: inline-block;
-  vertical-align: middle;
-  width: 18px;
-  height: 18px;
+.user-name:before {
+  content: '';
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 10px;
+  width: 17px;
+  height: 17px;
   background-repeat: no-repeat;
   background-image: url("../img/svg/user.svg");
   background-size: cover;
 }
+
+
+.compare-list {
+  position: relative;
+  margin: auto;
+  padding-left: 14px;
+}
+
+.cart-list {
+  position: relative;
+  margin: auto;
+  padding-left: 14px;
+}
+
 
 .modal-login{
   vertical-align: middle;
@@ -751,11 +757,25 @@ a {
   background-size: cover;
 }
 
-.header-login-button {
+.login-button {
   margin-right: 175px;
 }
 
-.modal-logoff {
+.login-button:before {
+  content: '';
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 3px;
+  width: 18px;
+  height: 18px;
+  background-repeat: no-repeat;
+  background-image: url("../img/svg/user.svg");
+  background-size: cover;
+}
+
+
+.logoff {
   font-size: 17px;
   font-weight: 300;
   line-height: 2;
@@ -765,16 +785,33 @@ a {
   opacity: 0.3;
 }
 
+.logoff:hover {
+  opacity: 0.6;
+}
+
+
 .compare {
   margin: auto;
-  padding-left: 7px;
-  display: inline-block;
-  vertical-align: middle;
+  display: block;
+  padding: 1px 6px;
   font-size: 17px;
   font-weight: 300;
   background-color: #f8e297;
   border: none;
   letter-spacing: 0.15px;
+}
+
+.compare:before {
+  content: '';
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 2;
+  width: 15px;
+  height: 15px;
+  background-repeat: no-repeat;
+  background-image: url("../img/svg/compare.svg");
+  background-size: cover;
 }
 
 .cart {
@@ -785,6 +822,19 @@ a {
   background-color: #f8e297;
   border: none;
   letter-spacing: 0.15px;
+}
+
+.cart:before {
+  content: '';
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 2px;
+  width: 15px;
+  height: 15px;
+  background-repeat: no-repeat;
+  background-image: url("../img/svg/cart.svg");
+  background-size: cover;
 }
 
 .navigation-catalog-link,
@@ -921,18 +971,43 @@ a {
 
 
 
-.logo-DJI:hover {
-  background-image: url("../img/logo-1-color.png");
+.logo-DJI-color,
+.logo-SP-color,
+.logo-GoPro-color,
+.logo-Vive-color
+{
+  display: none;
 }
-.logo-SP:hover {
-  background-image: url("../img/logo-2-color.png");
+
+.logo-DJI,
+.logo-SP,
+.logo-GoPro,
+.logo-Vive {
+  display: inline-block;
+  width: 260px;
+  height: 100px;
 }
-.logo-GoPro:hover {
-  background-image: url("../img/logo-3-color.png");
+
+.logo-DJI {
+  background-image: url("../img/logo-1.png");
 }
-.logo-Vive:hover {
-  background-image: url("../img/logo-4-color.png");
+.logo-SP {
+  background-image: url("../img/logo-2.png");
 }
+.logo-GoPro {
+  background-image: url("../img/logo-3.png");
+}
+.logo-Vive {
+  background-image: url("../img/logo-4.png");
+}
+
+.logo-DJI:hover .logo-DJI-color,
+.logo-SP:hover .logo-SP-color,
+.logo-GoPro:hover .logo-GoPro-color,
+.logo-Vive:hover .logo-Vive-color {
+  display: block;
+}
+
 
 
 /*Стили для футера*/
@@ -965,6 +1040,7 @@ a {
 }
 
 .footer-user-activity ul {
+  padding: 0;
   display: flex;
 }
 
@@ -1000,36 +1076,12 @@ a {
   margin: 0 auto;
 }
 
-
-.login-footer-img {
-  display: inline-block;
-  vertical-align: middle;
-  width: 13px;
-  height: 13px;
-  background-repeat: no-repeat;
-  background-image: url("../img/svg/user-footer.svg");
-  background-size: cover;
+.footer-user-activity .login-button:before,
+.footer-user-activity .compare:before,
+.footer-user-activity .cart:before {
+  top:15px;
 }
 
-.compare-footer-img {
-  display: inline-block;
-  vertical-align: middle;
-  width: 13px;
-  height: 13px;
-  background-repeat: no-repeat;
-  background-image: url("../img/svg/compare-footer.svg");
-  background-size: cover;
-}
-
-.cart-footer-img {
-  display: inline-block;
-  vertical-align: unset;
-  width: 13px;
-  height: 13px;
-  background-repeat: no-repeat;
-  background-image: url("../img/svg/cart-footer.svg");
-  background-size: cover;
-}
 
 .compare-button {
   opacity: 0.7;
@@ -1113,7 +1165,7 @@ a {
   background-image: url("../img/svg/instagram.svg");
 
 }
-.social-twitter {
+.social-vk {
   border-radius: 100%;
   width: 32px;
   height: 32px;
