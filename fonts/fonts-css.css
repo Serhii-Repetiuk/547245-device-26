@@ -1,43 +1,17 @@
 /*Open Sans fonts*/
 
+
+
 @font-face {
   font-family: 'Open Sans';
-  src: url('open_sans/opensansregular.ttf') format('truetype');
+  src: url('web/opensans.woff2') format('woff2'), url('web/opensans.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Open Sans';
-  src: url('open_sans/opensanslight.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  src: url('web/opensans.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  src: url('web/opensans.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  src: url('web/opensanslight.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  src: url('web/opensanslight.woff2') format('woff2');
+  src: url('web/opensanslight.woff2') format('woff2'), url('web/opensanslight.woff') format('woff');
   font-weight: 300;
   font-style: normal;
 }
@@ -47,42 +21,15 @@
 
 @font-face {
   font-family: 'Gilroy';
-  src: url('gilroy/gilroyextrabold.ttf') format('truetype');
+  src: url('web/gilroyextrabold.woff2') format('woff2'), url('web/gilroyextrabold.woff') format('woff');
   font-weight: 800;
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'Gilroy';
-  src: url('gilroy/gilroylight.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-}
 
 @font-face {
   font-family: 'Gilroy';
-  src: url('web/gilroyextrabold.woff') format('woff');
-  font-weight: 800;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Gilroy';
-  src: url('web/gilroyextrabold.woff2') format('woff2');
-  font-weight: 800;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Gilroy';
-  src: url('web/gilroylight.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Gilroy';
-  src: url('web/gilroylight.woff2') format('woff2');
+  src: url('web/gilroylight.woff2') format('woff2'), url('web/gilroylight.woff') format('woff');
   font-weight: 300;
   font-style: normal;
 }
