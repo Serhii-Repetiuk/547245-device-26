@@ -12,7 +12,7 @@
   <body>
   <header class="page-header">
       <a href="index.html">
-       <img class="main-header-logo" src="img/svg/device.svg" alt="«Логотип магазина Девайс»" width="187" height="45">
+       <img class="main-header-logo" src="img/svg/device.svg" alt="«Логотип магазина Девайс»" width="165" height="45">
       </a>
     <nav class="navigation">
       <div class="main-navigation-wrapper">
@@ -21,13 +21,17 @@
             <a class="navigation-catalog-link font-gilroy" href="catalog.html">Каталог товаров</a>
             <button class="open-catalog"><img class="plus" src="img/svg/plus.svg" alt="Кнопка +"></button>
           </li>
-          <li>
-            <ul class="catalog-sub-menu">
+          <li class="catalog-sub-menu">
+            <ul>
               <li><a href="#">Виртуальная реальность</a></li>
               <li><a href="#">Моноподы для селфи</a></li>
               <li><a href="#">Экшн-камеры</a></li>
+            </ul>
+            <ul>
               <li><a href="#">Фитнес-браслеты</a></li>
               <li><a href="#">Умные часы</a></li>
+            </ul>
+            <ul>
               <li><a href="#">Квадрокоптеры</a></li>
             </ul>
           </li>
@@ -40,8 +44,7 @@
       </div>
       <div class="user-activity-wrapper">
         <div class="search-wrapper">
-          <span class="search-img" aria-label="Картинка-увелечительного стекла"></span>
-          <label for="search" aria-label="Поиск по сайту"><input class="search" id="search" type="search" value="Поиск по сайту" alt="Поле поиска"></label>
+          <label for="search" aria-label="Поиск по сайту"><input class="search" id="search" type="text" value="Поиск по сайту" alt="Поле поиска"></label>
           <button class="search-button visually-hidden" type="button"><span>Найти</span></button>
         </div>
         <ul class="header-user-activity">
@@ -160,20 +163,20 @@
       </section>
       <!--Блок с картинкой #3-->
           <div class="carousel">
-            <label for="img-1">
-              <input type="radio" id="img-1" name="carousel" checked>
-            </label>
-            <label for="img-2">
-              <input type="radio" id="img-2" name="carousel" >
-            </label>
-            <label for="img-3">
-              <input type="radio" id="img-3" name="carousel">
-            </label>
+            <input class="slider-radio slider-radio-1" type="radio" id="img-1" name="carousel" checked>
+            <label class="slider-label slider-label-1" for="img-1"></label>
+
+            <input class="slider-radio slider-radio-2" type="radio" id="img-2" name="carousel">
+            <label class="slider-label slider-label-2" for="img-2"></label>
+
+            <input class="slider-radio slider-radio-3"  type="radio" id="img-3" name="carousel">
+            <label class="slider-label slider-label-3" for="img-3"></label>
+
           </div>
     </div>
     <section class="catalog-popular">
       <h3 class="visually-hidden">Популярные разделы каталога</h3>
-      <ul class="popular-items">
+      <ul class="popular-items font-gilroy">
         <li>
           <a class="popular-back" href="#"><span class="catalog-popular-img1"></span></a>
           <a href="#"><p>Виртуальная <br> реальность</p></a>
@@ -268,18 +271,18 @@
     </section>
 
     <section class="about-main">
-      <div class="wrapper">
+      <div class="about-wrapper">
       <div class="about-us-container">
         <span class="black-decorative-line"></span>
-        <h3>О нас</h3>
+        <h3 class="about-title font-gilroy">О нас</h3>
         <p>Огромный выбор гаджетов не оставит равнодушным гика,<br>
           который есть в каждом из нас.</p>
         <p>Мы можем доставить ваш товар в самые отдаленные точки <br>
           России! DEVICE работает со многими транспортными компаниями:</p>
         <ul class="about-delivery font-gilroy">
-          <li><a href="#">Деловые Линии</a></li>
-          <li><a href="#">Автотрейдинг</a></li>
-          <li><a href="#">ЖелДорЭкспедиция</a></li>
+          <li class="delivery-item"><a class="about-item" href="#">Деловые Линии</a></li>
+          <li class="delivery-item"><a class="about-item" href="#">Автотрейдинг</a></li>
+          <li class="delivery-item"><a class="about-item" href="#">ЖелДорЭкспедиция</a></li>
         </ul>
         <a class="button font-gilroy about-us" href="#">
           <span>Подробнее о нас</span>
@@ -287,7 +290,7 @@
       </div>
       <div class="contacts">
         <span class="black-decorative-line"></span>
-        <h3>Контакты</h3>
+        <h3 class="about-title font-gilroy">Контакты</h3>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете<br> проверить работоспособность покупки.
           Всякое бывает.</p>
           <img class="map-img" src="img/map.png" alt="Адрес нашего местоположения. город Москва, улица Строителей, 15" width="560" height="222">
@@ -333,46 +336,48 @@
         <a href="index.html">
           <img class="footer-logo" src="img/svg/logo-footer.svg" alt="«Логотип магазина Девайс»">
         </a>
-        <p>г. Москва, ул. Строителей, 15</p>
+        <p class="address">г. Москва, ул. Строителей, 15</p>
         <span class="yellow-decorative-line"></span>
       </div>
       <div class="footer-wrapper">
         <section class="footer-user-activity">
           <ul class="user-activity-list">
-            <li class="login-list">
-              <button class="modal-login login-button" type="button">Войти</button>
+            <li class="login-list footer-login">
+              <button class="modal-login footer-login-button" type="button">Войти</button>
             </li>
-            <li class="compare-list">
-              <a class="compare" href="#">Сравнить</a>
+            <li class="compare-list compare-footer">
+              <a class="compare-button" href="#">Сравнить</a>
             </li>
-            <li class="cart-list indent-collapse">
-              <button class="cart indent-collapse" type="button">Корзина</button>
+            <li class="cart-list cart-footer indent-collapse">
+              <button class="cart-button indent-collapse" type="button">Корзина</button>
             </li>
           </ul>
         </section>
         <div class="footer-side-holder">
           <section class="service-footer">
-            <ul class="services-type">
+            <ul class="services-type font-gilroy">
               <li>
                 <a href="#">Доставка</a>
               </li>
               <li>
-                <a href="#">Гарантия</a>
+                <a class="warranty-link" href="#">Гарантия</a>
               </li>
               <li>
                 <a href="#">Контакты</a>
               </li>
             </ul>
             <ul class="social">
-              <li><a class="social-facebook" href="#"></a></li>
-              <li><a class="social-instagram" href="#"></a></li>
-              <li><a class="social-vk" href="#"></a></li>
+              <div class="social-wrapper">
+                <li><a class="social-facebook" href="#"></a></li>
+                <li><a class="social-instagram" href="#"></a></li>
+                <li><a class="social-vk" href="#"></a></li>
+              </div>
             </ul>
           </section>
           <div class="footer-contacts">
-            <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+            <a class="phone-number" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
             <a href="https://htmlacademy.ru">
-              <img src="img/svg/logo-htmlacademy.svg" alt="Сделано в HTML-Academy" width="27" height="35">
+              <img class="academy-link" src="img/svg/logo-htmlacademy.svg" alt="Сделано в HTML-Academy" width="27" height="35">
             </a>
           </div>
         </div>

@@ -14,7 +14,7 @@
   <header class="page-header">
     <div class="logo-wrapper">
       <a href="index.html">
-        <img class="main-header-logo" src="img/svg/device.svg" alt="«Логотип магазина Девайс»" width="187" height="45">
+        <img class="main-header-logo" src="img/svg/device.svg" alt="«Логотип магазина Девайс»" width="100" height="45">
       </a>
     </div>
     <nav class="navigation">
@@ -24,13 +24,17 @@
             <a class="navigation-catalog-link font-gilroy" href="catalog.html">Каталог товаров</a>
             <button class="open-catalog"><span class="plus"></span></button>
           </li>
-          <li>
-            <ul class="visually-hidden">
+          <li class="catalog-sub-menu">
+            <ul>
               <li><a href="#">Виртуальная реальность</a></li>
               <li><a href="#">Моноподы для селфи</a></li>
               <li><a href="#">Экшн-камеры</a></li>
+            </ul>
+            <ul>
               <li><a href="#">Фитнес-браслеты</a></li>
               <li><a href="#">Умные часы</a></li>
+            </ul>
+            <ul>
               <li><a href="#">Квадрокоптеры</a></li>
             </ul>
           </li>
@@ -44,7 +48,7 @@
       <div class="user-activity-wrapper">
         <div class="search-wrapper">
           <span class="search-img" aria-label="Картинка-увелечительного стекла"></span>
-          <label for="search" aria-label="Поиск по сайту"><input class="search" id="search" type="search" value="Поиск по сайту" alt="Поле поиска"></label>
+          <label for="search" aria-label="Поиск по сайту"><input class="search" id="search" type="text" value="Поиск по сайту" alt="Поле поиска"></label>
           <button class="search-button visually-hidden" type="button"><span>Найти</span></button>
         </div>
         <ul class="header-user-activity">
@@ -263,13 +267,13 @@
             <ul class="user-activity-list">
               <li class="login-list">
                 <span class="user-name">Валентин Петухов</span>
-                <button class="logoff" type="button">Выйти</button>
+                <button class="logoff-footer" type="button">Выйти</button>
               </li>
-              <li class="compare-list">
-                <a class="compare" href="#">Сравнить</a>
+              <li class="compare-list compare-footer">
+                <a class="compare-button" href="#">Сравнить</a>
               </li>
-              <li class="cart-list indent-collapse">
-                <button class="cart indent-collapse" type="button">Корзина</button>
+              <li class="cart-list cart-footer indent-collapse">
+                <button class="cart-button indent-collapse" type="button">Корзина</button>
               </li>
             </ul>
           </section>
