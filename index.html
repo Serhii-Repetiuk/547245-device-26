@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
-
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/normalize.css">
-
 </head>
 <body>
 <header class="page-header">
@@ -43,8 +41,11 @@
     </div>
     <div class="user-activity-wrapper">
       <div class="search-wrapper">
-        <label for="search" aria-label="Поиск по сайту"><input class="search" id="search" type="text" value="Поиск по сайту" placeholder="Поле поиска"></label>
-        <button class="search-button visually-hidden" type="button"><span>Найти</span></button>
+        <form class="search-form" method="GET" action="https://echo.htmlacademy.ru">
+          <label for="search" aria-label="Поиск по сайту"></label>
+          <input class="search" id="search" type="text" name="search" placeholder="Поиск по сайту">
+          <button class="search-button" type="submit"><span>Найти</span></button>
+        </form>
       </div>
       <ul class="header-user-activity">
         <li class="login-list">
@@ -188,7 +189,7 @@
   </section>
   <section class="service-main">
     <div class="wrapper">
-      <h3 class="visually-hidden">Доставка, гарантия, кредит</h3>
+      <h3 class="visually-hidden">Наши сервисы для Вас</h3>
       <ul class="services-list font-gilroy">
         <li>
           <button class="delivery-button services-active" type="button">
@@ -276,11 +277,12 @@
         </button>
       </div>
       <section class="modal contact-us-form visually-hidden">
+        <h3 class="visually-hidden">Форма обратной связи</h3>
         <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
           <div class="name-email-wrapper">
             <div class="contact-name-wrapper">
               <label class="font-gilroy" for="name">Ваше имя:</label>
-              <input id="name" type="text" name="name" placeholder="Имя Фамилия">
+              <input class="no-value" id="name" type="text" name="name" placeholder="Имя Фамилия">
             </div>
             <div class="contact-email-wrapper">
               <label class="font-gilroy" for="email">Ваш e-mail:</label>
@@ -292,7 +294,7 @@
             <textarea class="mail-body" name="mail-body" id="mail-body" cols="30" rows="10" placeholder="В свободной форме"></textarea>
           </div>
           <button class="button font-gilroy" type="submit">
-            <span>Отправить</span>
+            <span class="send-form">Отправить</span>
           </button>
           <button class="contact-modal-close modal-close" type="button"><img src="img/svg/modal-close.svg" alt="Закрыть форму доставки"></button>
         </form>
@@ -301,9 +303,8 @@
   </section>
   <section class="modal modal-map visually-hidden">
     <h2 class="visually-hidden">Как до нас добраться</h2>
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043705228!2d30.320889251501498!3d59.938794181787244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sua!4v1571322288331!5m2!1sru!2sua"
-      width="960" height="559" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043705228!2d30.320889251501498!3d59.938794181787244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sua!4v1571322288331!5m2!1sru!2sua"
+      width="960" height="559" style="border:0;" allowfullscreen=""></iframe>
     <button class="modal-close map-modal-close"><img src="img/svg/modal-close.svg" alt="Кнопка закрытия увеличеной карты"></button>
   </section>
 </main>
@@ -318,6 +319,7 @@
     </div>
     <div class="footer-wrapper">
       <section class="footer-user-activity">
+        <h3 class="visually-hidden">Специальный возможности пользователя</h3>
         <ul class="user-activity-list">
           <li class="index-footer-login">
             <button class="footer-login-button" type="button">Войти</button>
@@ -332,6 +334,7 @@
       </section>
       <div class="footer-side-holder">
         <section class="service-footer">
+          <h3 class="visually-hidden">Наши сервисы</h3>
           <ul class="services-type font-gilroy">
             <li>
               <a href="#">Доставка</a>
@@ -351,7 +354,7 @@
         </section>
         <div class="footer-contacts">
           <a class="phone-number" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
-          <a href="https://up.htmlacademy.ru/htmlcss/26">
+          <a href="https://htmlacademy.ru/intensive/htmlcss">
             <img class="academy-link" src="img/svg/logo-htmlacademy.svg" alt="Сделано в HTML-Academy" width="27" height="35">
           </a>
         </div>

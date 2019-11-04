@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <title>Title</title>
   <link rel="stylesheet" href="css/index.css">
-  <link rel="stylesheet" href="fonts/fonts-css.css">
   <link rel="stylesheet" href="css/normalize.css">
 </head>
 <body>
@@ -42,12 +41,15 @@
     </div>
     <div class="user-activity-wrapper">
       <div class="search-wrapper">
-        <label for="search" aria-label="Поиск по сайту"><input class="search" id="search" type="text" placeholder="Поиск по сайту" alt="Поле поиска"></label>
-        <button class="search-button visually-hidden" type="button"><span>Найти</span></button>
+        <form class="search-form" method="GET" action="https://echo.htmlacademy.ru">
+          <label for="search" aria-label="Поиск по сайту"></label>
+          <input class="search" id="search" type="text" name="search" placeholder="Поиск по сайту">
+          <button class="search-button" type="submit"><span>Найти</span></button>
+        </form>
       </div>
       <ul class="header-user-activity">
         <li class="login-list">
-          <span class="user-name">Валентин Петухов</span>
+          <a href="https://motr-online.com/"><span class="user-name">Валентин Петухов</span></a>
           <button class="header-logoff" type="button">Выйти</button>
         </li>
         <li class="compare-list">
@@ -91,7 +93,7 @@
       <div class="filters-wrapper">
         <div class="divider"></div>
         <h3 class="price-h1">Стоимость</h3>
-        <form action="https://echo.htmlacademy.ru">
+        <form method="GET" action="https://echo.htmlacademy.ru">
           <div class="price-sorting-wrapper">
             <div class="range-controls">
               <div class="scale">
@@ -110,6 +112,7 @@
         </div>
         <div class="divider"></div>
         <h3 class="colour-h3">Цвет</h3>
+        <form method="GET" action="https://echo.htmlacademy.ru">
         <ul class="filter-color">
           <li class="color-filter-item">
             <input id="color-black" type="checkbox" value="Черный" checked>
@@ -144,7 +147,8 @@
             <label for="hasnt-bluetooth">Нет</label>
           </li>
         </ul>
-        <button class="button button-show font-gilroy" type="button"><span>Показать</span></button>
+          <button class="button button-show font-gilroy" type="button"><span>Показать</span></button>
+        </form>
       </div>
     </section>
     <div class="catalog-wrapper">
@@ -238,6 +242,7 @@
         </div>
         <div class="pagination-wrapper">
           <section class="pagination">
+            <h3 class="visually-hidden">Нумерация страниц каталога товаров</h3>
             <button class="pagination-button-back" type="button">Назад</button>
             <ul class="pagination-list">
               <li class="pagination-item-current">1</li>
@@ -262,6 +267,7 @@
     </div>
     <div class="footer-wrapper">
       <section class="footer-user-activity">
+        <h3 class="visually-hidden">Специальный возможности пользователя</h3>
         <ul class="user-activity-list">
           <li class="login-list">
             <span class="footer-user-name">Валентин Петухов</span>
@@ -277,6 +283,7 @@
       </section>
       <div class="footer-side-holder">
         <section class="service-footer">
+          <h3 class="visually-hidden">Наши сервисы</h3>
           <ul class="services-type font-gilroy">
             <li>
               <a href="#">Доставка</a>
@@ -296,7 +303,7 @@
         </section>
         <div class="footer-contacts">
           <a class="phone-number" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
-          <a href="https://up.htmlacademy.ru/htmlcss/26">
+          <a href="https://htmlacademy.ru/intensive/htmlcss">
             <img class="academy-link" src="img/svg/logo-htmlacademy.svg" alt="Сделано в HTML-Academy" width="27" height="35">
           </a>
         </div>

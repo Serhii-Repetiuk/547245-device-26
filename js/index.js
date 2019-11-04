@@ -6,6 +6,7 @@
     let form = document.querySelector(".contact-form");
     let name = openContactUs.querySelector("[name=name]");
     let email = openContactUs.querySelector("[name=email]");
+    let sendForm =  document.querySelector(".send-form");
 
 
     contactUs.addEventListener("click", function (evt) {
@@ -24,12 +25,12 @@
 
       if (!name.value || !email.value) {
         evt.preventDefault();
-        alert("Заполните имя и адрес почты для отправки")
-      } else  {
-        localStorage.setItem("name", name.value);
-        localStorage.setItem("name", email.value);
+        openContactUs.classList.add("modal-error");
+        alert("Заполните имя и адрес почты для отправки");
       }
     });
+
+
     /*Форма обратной связи*/
 
     /*Доставка-гарантия-кредит*/
