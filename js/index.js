@@ -126,10 +126,6 @@
         decorative01.classList.add("visually-hidden");
       });
 
-
-      /*Слайдер товаров в индексе*/
-
-
       /*Увеличение карты*/
       let mapOpen = document.querySelector(".map-img");
       let modalMap = document.querySelector(".modal-map");
@@ -146,19 +142,4 @@
         modalMap.classList.add("visually-hidden");
 
       });
-      /*Увеличение карты*/
 
-      /*Скрипт для поля поиска*/
-      let searchFocus = document.querySelector(".search-wrapper");
-      let search = document.querySelector(".search");
-      let searchButton = document.querySelector(".search-button");
-      search.addEventListener("click", function (evt) {
-        searchFocus.classList.add("focus-styles");
-        searchButton.classList.remove("visually-hidden");
-      });
-
-      searchButton.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        searchFocus.classList.remove("focus-styles");
-        searchButton.classList.add("visually-hidden");
-      });
