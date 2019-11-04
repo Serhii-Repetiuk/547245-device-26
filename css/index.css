@@ -110,7 +110,7 @@ a {
 .carousel {
   position: absolute;
   left: 1087px;
-  bottom: 162px;
+  top: 178px;
 }
 
 .slider-radio {
@@ -474,7 +474,7 @@ a {
   line-height: 1.19;
   letter-spacing: 0.75px;
   position: relative;
-  margin-top: -81px;
+  margin-top: -76px;
   z-index: 1;
 }
 
@@ -938,7 +938,7 @@ a {
   position: absolute;
   display: block;
   left: 3px;
-  top: 6px;
+  top: 12px;
   width: 15px;
   height: 15px;
   background-image: url("../img/svg/user.svg");
@@ -968,16 +968,15 @@ a {
 
 .login-button {
    padding-left: 30px;
-   margin-right: 175px;
+   margin-right: 179px;
 }
-
 
 .login-button:before {
   content: '';
   position: absolute;
   display: block;
-  left: 4px;
-  top: 6px;
+  left: 3px;
+  top: 11px;
   width: 15px;
   height: 15px;
   background-image: url("../img/svg/user.svg");
@@ -989,7 +988,7 @@ a {
   font-size: 15px;
   font-weight: 300;
   letter-spacing: 0.15px;
-  margin-right: 23px;
+  margin-right: 29px;
   margin-left: 3px;
   padding: 10px 5px 5px 5px;
   opacity: 0.3;
@@ -1016,8 +1015,8 @@ a {
   content: '';
   display: block;
   position: absolute;
-  left: 11px;
-  top: 8px;
+  left: 5px;
+  top: 13px;
   width: 11px;
   height: 11px;
   background-image: url("../img/svg/compare.svg");
@@ -1041,7 +1040,7 @@ a {
   display: block;
   position: absolute;
   left: 8px;
-  top: 7px;
+  top: 12px;
   width: 12px;
   height: 12px;
   background-image: url("../img/svg/cart.svg");
