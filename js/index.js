@@ -25,7 +25,6 @@
       if (!name.value || !email.value) {
         evt.preventDefault();
         openContactUs.classList.add("modal-error");
-        alert("Заполните имя и адрес почты для отправки");
       }
     });
 
