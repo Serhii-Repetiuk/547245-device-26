@@ -6,7 +6,6 @@
     let form = document.querySelector(".contact-form");
     let name = openContactUs.querySelector("[name=name]");
     let email = openContactUs.querySelector("[name=email]");
-    let sendForm =  document.querySelector(".send-form");
 
 
     contactUs.addEventListener("click", function (evt) {

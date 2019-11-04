@@ -40,22 +40,23 @@
       </ul>
     </div>
     <div class="user-activity-wrapper">
-      <div class="search-wrapper">
-        <form class="search-form" method="GET" action="https://echo.htmlacademy.ru">
-          <label for="search" aria-label="Поиск по сайту"></label>
-          <input class="search" id="search" type="text" name="search" placeholder="Поиск по сайту">
-          <button class="search-button" type="submit"><span>Найти</span></button>
-        </form>
-      </div>
+        <div class="search-wrapper">
+          <form class="search-form" method="GET" action="https://echo.htmlacademy.ru">
+            <label for="search" aria-label="Поиск по сайту"></label>
+            <input class="search" id="search" type="text" name="search" placeholder="Поиск по сайту">
+            <button class="search-button" type="submit">Найти</button>
+            <span class="bottom-line"></span>
+          </form>
+        </div>
       <ul class="header-user-activity">
         <li class="login-list">
-          <button class="modal-login login-button" type="button">Войти</button>
+          <a class="modal-login login-button" href="#" >Войти</a>
         </li>
         <li class="compare-list">
           <a class="compare" href="#">Сравнить</a>
         </li>
         <li class="cart-list">
-          <button class="cart" type="button">Корзина</button>
+          <a class="cart" href="#">Корзина</a>
         </li>
       </ul>
     </div>
@@ -166,7 +167,7 @@
         <a href="#"><p>Виртуальная <br> реальность</p></a>
       </li>
       <li>
-        <a class="popular-back" href="#"><span class="catalog-popular-img2"></span></a>
+        <a class="popular-back" href="http://localhost:63342/547245-device-26/catalog.html#"><span class="catalog-popular-img2"></span></a>
         <a href="#"><p>Моноподы <br> для селфи</p></a>
       </li>
       <li>
@@ -322,13 +323,13 @@
         <h3 class="visually-hidden">Специальный возможности пользователя</h3>
         <ul class="user-activity-list">
           <li class="index-footer-login">
-            <button class="footer-login-button" type="button">Войти</button>
+            <a href="#" class="footer-login-button">Войти</a>
           </li>
           <li class="compare-list compare-footer">
             <a class="compare-button" href="#">Сравнить</a>
           </li>
-          <li class="cart-list cart-footer indent-collapse">
-            <button class="cart-button indent-collapse" type="button">Корзина</button>
+          <li class="cart-list indent-collapse">
+            <a href="#" class="cart-button indent-collapse">Корзина</a>
           </li>
         </ul>
       </section>
