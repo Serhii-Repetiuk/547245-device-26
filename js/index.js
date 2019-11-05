@@ -11,6 +11,7 @@ let email = openContactUs.querySelector("[name=email]");
 contactUs.addEventListener("click", function (evt) {
   evt.preventDefault();
   openContactUs.classList.remove("visually-hidden");
+  openContactUs.classList.add("modal-show");
   name.focus();
 });
 
@@ -18,6 +19,7 @@ contactUs.addEventListener("click", function (evt) {
 close.addEventListener("click", function (evt) {
   evt.preventDefault();
   openContactUs.classList.add("visually-hidden");
+  openContactUs.classList.remove("modal-show");
 });
 
 form.addEventListener("submit", function (evt) {
@@ -30,8 +32,6 @@ form.addEventListener("submit", function (evt) {
   }
 });
 
-
-/*Форма обратной связи*/
 
 /*Доставка-гарантия-кредит*/
 let deliveryButton = document.querySelector(".delivery-button");
@@ -84,10 +84,9 @@ creditButton.addEventListener("click", function (evt) {
   deliveryButton.classList.remove("services-active");
   deliveryButton.classList.add("button");
 });
-/*Доставка-гарантия-кредит*/
+
 
 /*Слайдер товаров в индексе*/
-
 let slide1 = document.querySelector("[id=img-1]");
 let slide2 = document.querySelector("[id=img-2]");
 let slide3 = document.querySelector("[id=img-3]");
@@ -126,6 +125,7 @@ slide3.addEventListener("click", function (evt) {
   decorative02.classList.add("visually-hidden");
   decorative01.classList.add("visually-hidden");
 });
+
 
 /*Увеличение карты*/
 let mapOpen = document.querySelector(".map-img");

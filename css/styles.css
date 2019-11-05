@@ -32,10 +32,6 @@ body {
   padding-top: 40px;
 }
 
-li {
-  list-style-type: none;
-}
-
 a {
   text-decoration:none;
   color: #000000;
@@ -54,13 +50,13 @@ a {
   font-family: 'Gilroy', sans-serif;
   text-transform: uppercase;
   text-align: center;
-  vertical-align: middle;
   background-color: #f0c52e;
   line-height: 1.33;
   letter-spacing: 3.5px;
   font-size: 18px;
   font-weight: 800;
   display: inline-block;
+  vertical-align: middle;
   position: relative;
   padding: 9px 14px;
   border: none;
@@ -167,7 +163,7 @@ a {
 .yellow-bar {
   display: block;
   width: 100%;
-  padding: 58px 0;
+  padding: 53px 0;
   background-color: #f8e297;
 }
 
@@ -205,10 +201,9 @@ a {
 
 .plus {
   display: inline-block;
-  vertical-align: initial;
+  vertical-align: middle;
   width: 16px;
   height: 16px;
-  margin: auto;
   background-repeat: no-repeat;
   background-image: url("../img/svg/plus.svg");
   background-size: cover;
@@ -219,10 +214,6 @@ a {
   justify-content: space-between;
   align-items: center;
   order: 1;
-  margin-top: 11px;
-}
-.navigation-catalog-list {
-  padding-left: 0;
 }
 
 .navigation-list a {
@@ -275,6 +266,7 @@ a {
 .navigation-catalog-list {
   position: relative;
   padding-left: 0;
+  margin-top: 16px;
 }
 
 .catalog-sub-menu {
@@ -339,7 +331,11 @@ a {
   display: flex;
   flex-direction: column;
   position: relative;
-  margin-top: 32px;
+  margin-top: 30px;
+}
+
+.page-main li {
+  list-style-type: none;
 }
 
 .slider-wrapper {
@@ -354,7 +350,7 @@ a {
 
 .wrapper .catalog-item1,
 .wrapper .catalog-item2,
-.wrapper .catalog-item3{
+.wrapper .catalog-item3 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -534,11 +530,11 @@ a {
 }
 
 .service-main {
-  margin-top: 154px;
+  margin-top: 157px;
   background-color: #e5e5e5;
 }
 
-.service-main .wrapper{
+.service-main .wrapper {
   display: flex;
   padding-bottom: 53px;
 }
@@ -586,7 +582,7 @@ a {
 .warranty-button::after,
 .credit-button::before,
 .credit-button::after,
-.delivery-button::after{
+.delivery-button::after {
   background-color: #e5e5e5;
 }
 
@@ -629,7 +625,7 @@ a {
   background-color: black;
 }
 
-.about-main .about-wrapper{
+.about-main .about-wrapper {
   display: flex;
   justify-content: space-around;
   max-width: 1286px;
@@ -708,8 +704,7 @@ a {
 }
 
 .contact-us-button,
-.about-us-button
-{
+.about-us-button {
   max-width: 250px;
 }
 
@@ -721,7 +716,7 @@ a {
 .service-footer {
   display: flex;
   flex-direction: column;
-  margin-top: 19px;
+  margin-top: 23px;
 }
 
 .services-type {
@@ -769,23 +764,31 @@ a {
   width: 1201px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 65px;
+  margin-top: 69px;
 }
 
 .page-header {
   max-width: 1160px;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 30px;
+  padding-bottom: 16px;
   padding-left: 60px;
   padding-right: 61px;
   background-color: #f8e297;
   box-sizing: border-box;
 }
 
+.page-header li {
+  list-style-type: none;
+}
+
 .open-catalog {
-  vertical-align: text-bottom;
-  margin-left: 2px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  margin: 0 0 5px 8px;
   opacity: 0.5;
   background-color: #f8e297;
   border: none;
@@ -799,14 +802,14 @@ a {
 .user-name:hover,
 .compare:hover,
 .cart:hover,
-.login-button:hover{
+.login-button:hover {
   opacity: 0.6;
 }
 
 .user-name:active,
 .compare:active,
 .cart:active,
-.login-button:active{
+.login-button:active {
   opacity: 0.3;
 }
 
@@ -1030,8 +1033,8 @@ a {
   font-weight: 300;
   letter-spacing: 0.15px;
   display: inline-block;
-  padding: 10px 0 5px 30px;
   vertical-align: middle;
+  padding: 10px 0 5px 30px;
   background-color: #f8e297;
   border: none;
 }
@@ -1051,17 +1054,19 @@ a {
 
 .navigation-catalog-link {
   letter-spacing: 3.5px;
+  padding: 10px 0;
 }
 
 .navigation-catalog-link,
 .navigation-contacts,
 .navigation-delivery,
 .navigation-warranty {
-  line-height: 1.33px;
+  line-height: 1.33;
   letter-spacing: 3.5px;
   font-size: 18px;
   font-weight: 800;
   display: inline-block;
+  vertical-align: middle;
   text-transform: uppercase;
   text-align: center;
   background-color: #f8e297;
@@ -1069,7 +1074,7 @@ a {
 }
 
 .services-image {
-  display: inline-block;
+  display: block;
   min-height: 100%;
   min-width: 136px;
   margin-top: -76px;
@@ -1107,47 +1112,55 @@ a {
 }
 
 .popular-back {
-    display: inline-block;
-    width: 160px;
-    height: 160px;
-    background-color: #f8e297;
+  display: inline-block;
+  vertical-align: middle;
+  width: 160px;
+  height: 160px;
+  background-color: #f8e297;
 }
 
 .popular-back:hover {
   background-color: #f0c52e;
 }
 
-.popular-items li:active span,
-.popular-items li:active p {
+.popular-item:active span,
+.popular-item:active p {
   opacity: 0.3;
 }
 
 .catalog-popular-img1 {
   display: inline-block;
+  vertical-align: middle;
   width: 97px;
   height: 55px;
   margin-top: 52px;
   margin-left: 31px;
   background-image: url("../img/svg/popular-1.svg");
 }
+
 .catalog-popular-img2 {
   display: inline-block;
+  vertical-align: middle;
   margin-top: 41px;
   margin-left: 38px;
   width: 86px;
   height: 117px;
   background-image: url("../img/svg/popular-2.svg");
 }
-.catalog-popular-img3{
+
+.catalog-popular-img3 {
   display: inline-block;
+  vertical-align: middle;
   margin-top: 38px;
   margin-left: 49px;
   width: 71px;
   height: 87px;
   background-image: url("../img/svg/popular-3.svg");
 }
+
 .catalog-popular-img4 {
   display: inline-block;
+  vertical-align: middle;
   width: 107px;
   height: 65px;
   margin-top: 50px;
@@ -1157,15 +1170,17 @@ a {
 
 .catalog-popular-img5 {
   display: inline-block;
+  vertical-align: middle;
   width: 56px;
   height: 98px;
   margin-top: 32px;
   margin-left: 55px;
   background-image: url("../img/svg/popular-5.svg");
-
 }
+
 .catalog-popular-svg6 {
   display: inline-block;
+  vertical-align: middle;
   width: 132px;
   height: 69px;
   margin-top: 49px;
@@ -1176,8 +1191,7 @@ a {
 .logo-DJI-color,
 .logo-SP-color,
 .logo-GoPro-color,
-.logo-Vive-color
-{
+.logo-Vive-color {
   display: none;
 }
 
@@ -1186,6 +1200,7 @@ a {
 .logo-GoPro,
 .logo-Vive {
   display: inline-block;
+  vertical-align: middle;
   width: 260px;
   height: 100px;
 }
@@ -1212,9 +1227,13 @@ a {
 
 .page-footer {
   margin-top: 80px;
-  padding-top: 59px;
+  padding-top: 56px;
   color: white;
   background-color: #464646;
+}
+
+.page-footer li {
+  list-style-type: none;
 }
 
 .page-footer .wrapper {
@@ -1435,7 +1454,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin-top: 19px;
+  margin-top: 21px;
   margin-left: 199px;
 }
 
@@ -1460,7 +1479,7 @@ a {
 }
 
 .footer-contacts a {
-  display: inline-block;
+  display: block;
   text-align: center;
   margin-bottom: 30px;
   color: white;
@@ -1484,7 +1503,7 @@ a {
 }
 
 .footer-logo {
-  margin-top: 5px;
+  margin-top: 10px;
   color: #f0c52e;
 }
 
@@ -1505,8 +1524,9 @@ a {
 
 .social-facebook {
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  vertical-align: middle;
+  width: 33px;
+  height: 33px;
   background-repeat: no-repeat;
   background-position: center;
   background-image: url("../img/svg/facebook.svg");
@@ -1517,6 +1537,7 @@ a {
 }
 .social-instagram {
   display: inline-block;
+  vertical-align: middle;
   width: 32px;
   height: 32px;
   margin-left: 15px;
@@ -1530,6 +1551,7 @@ a {
 
 .social-twitter {
   display: inline-block;
+  vertical-align: middle;
   width: 32px;
   height: 32px;
   background-image: url("../img/svg/twitter.svg");
@@ -1552,6 +1574,18 @@ a {
   z-index: 2;
 }
 
+@keyframes bounce {
+  0%   { transform: translateY(-2000px); }
+  70%  { transform: translateY(30px);    }
+  90%  { transform: translateY(-10px);   }
+  100% { transform: translateY(0);       }
+}
+
+.modal-show {
+  animation-name: bounce;
+  animation-duration: 0.5s;
+}
+
 .contact-us-form  {
   left: 50%;
   top: 50%;
@@ -1565,7 +1599,7 @@ a {
 }
 
 .contact-us-form input[type="text"],
-.contact-us-form input[type="email"]{
+.contact-us-form input[type="email"] {
   border: none;
   font: inherit;
 }
@@ -1596,7 +1630,7 @@ a {
   line-height: 1.33;
 }
 
-.contact-us-form input{
+.contact-us-form input {
   font-size: 14px;
   line-height: 1.29;
   color: rgba(70, 70, 70, 0.4);
@@ -1732,7 +1766,7 @@ a {
   background-color: #ebebeb;
   border: none;
 }
-.catalog-item-image{
+.catalog-item-image {
   background-color: #ebebeb;
 }
 
@@ -1752,7 +1786,7 @@ a {
 }
 
 .divider {
-  display: inline-block;
+  display: block;
   height: 2px;
   background-color: black;
 }
@@ -1805,7 +1839,7 @@ a {
 }
 
 .arrow-up-link:active,
-.arrow-down-link:active{
+.arrow-down-link:active {
   opacity: 0.6
 }
 
@@ -1838,6 +1872,10 @@ a {
   display: block;
 }
 
+.catalog-main li {
+  list-style-type: none;
+}
+
 .catalog-body-wrapper {
   display: flex;
   justify-content: center;
@@ -1850,7 +1888,7 @@ a {
   display: flex;
   flex-direction: column;
   max-width: 1160px;
-  margin: 0px auto 30px;
+  margin: 0 auto 30px;
   padding-left: 60px;
 }
 
@@ -1898,7 +1936,7 @@ a {
 .breadcrumbs a:hover {
   opacity: 1;
 }
-.breadcrumbs li:last-child:hover a{
+.breadcrumbs li:last-child:hover a {
   cursor: default;
   opacity: 0.3;
 }
@@ -1958,24 +1996,25 @@ a {
   height: 25px;
   background: url(../img/svg/checkbox-off.svg) 0 50% no-repeat;
 }
+
 .color-filter-item input:checked+label::before {
   background: url(../img/svg/checkbox-on.svg) 0 50% no-repeat;
 }
 
 .color-filter-item label:hover::before,
-.filter-bluetooth-item label:hover::before{
+.filter-bluetooth-item label:hover::before {
   opacity: 0.6;
 }
 
 .color-filter-item label:active::before,
-.filter-bluetooth-item label:active::before{
+.filter-bluetooth-item label:active::before {
   opacity: 1;
 }
 
 .filters-h3 {
   letter-spacing: 1.3px;
-  margin-bottom: 3px;
-  margin-top: 0;
+  margin-bottom: 0px;
+  margin-top: 18px;
 }
 
 .filter-bluetooth-item label {
@@ -2027,12 +2066,13 @@ a {
 
 .price-sorting {
   display: inline-block;
+  vertical-align: middle;
   position: relative;
   height: 25px;
 }
 
 .price-sorting:before,
-.price-sorting:after{
+.price-sorting:after {
   position: absolute;
   width: 10px;
   height: 10px;
@@ -2095,6 +2135,7 @@ a {
   flex-direction: row;
   max-width: 145px;
 }
+
 .prise-value-wrapper span {
   height: 12px;
   opacity: 0.2;
@@ -2155,7 +2196,7 @@ a {
 
 .sorting-list button {
   width: 100%;
-  margin-left: 10px;
+  margin-left: 13px;
   margin-right: 8px;
   background-color: transparent;
   box-sizing: border-box;
@@ -2204,7 +2245,7 @@ a {
 
 .catalog-list-holder {
   max-width: 833px;
-  padding: 52px 0 0 73px;
+  padding: 54px 0 0 73px;
   margin-right: auto;
   box-sizing: border-box;
 }
@@ -2263,7 +2304,7 @@ a {
   z-index: 1;
 }
 
-.catalog-item-hover:hover + img  {
+.catalog-item-hover:hover + img {
   opacity: 0.7;
 }
 
@@ -2275,9 +2316,9 @@ a {
   font-weight: 800;
   text-transform: uppercase;
   display: inline-block;
+  vertical-align: middle;
   position: relative;
   text-align: center;
-  vertical-align: middle;
   padding: 9px 14px;
   background-color: transparent;
   border: none;
@@ -2353,6 +2394,7 @@ a {
   text-align: center;
   text-transform: uppercase;
   display: inline-block;
+  vertical-align: middle;
   width: 17%;
   padding: 23px 18px;
   border: none;
@@ -2379,7 +2421,7 @@ a {
   margin-top: 25px;
 }
 
-.pagination-list li{
+.pagination-list li {
   font-size: 16px;
   font-weight: 800;
   line-height: 1.5;
@@ -2399,22 +2441,23 @@ label {
 
 .regular-checkbox + label {
   display: inline-block;
+  vertical-align: middle;
   position: relative;
   padding: 9px;
   background-color: #fafafa;
   border: 1px solid #cacece;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0 -15px 10px -12px rgba(0,0,0,0.05);
   border-radius: 3px;
 }
 
 .regular-checkbox + label:active, .regular-checkbox:checked + label:active {
-  box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0 1px 3px rgba(0,0,0,0.1);
 }
 
 .regular-checkbox:checked + label {
   background-color: #e9ecee;
   border: 1px solid #adb8c0;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0 -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
   color: #99a1a7;
 }
 
