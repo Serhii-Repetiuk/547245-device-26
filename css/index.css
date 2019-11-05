@@ -107,7 +107,7 @@ a {
 .carousel {
   position: absolute;
   left: 1087px;
-  top: 178px;
+  top: 186px;
 }
 
 .slider-radio {
@@ -342,9 +342,13 @@ a {
   margin-top: 32px;
 }
 
+.slider-wrapper {
+  width: 1160px;
+}
+
 .page-main .wrapper {
   position: relative;
-  max-width: 1200px;
+  width: 1160px;
   padding: 0 82px;
 }
 
@@ -427,6 +431,7 @@ a {
   justify-content: flex-start;
   flex-direction: column;
   width: 562px;
+  margin-left: auto;
 }
 
 .item-description-wrapper::before {
@@ -761,6 +766,7 @@ a {
 }
 
 .catalog-popular {
+  width: 1201px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 65px;
@@ -815,9 +821,13 @@ a {
   font-size: 15px;
   letter-spacing: .15px;
   color: rgba(0,0,0,0.3);
-  background-color: inherit;
+  background-color: #f8e297;
   border: 0;
   outline: 1px solid transparent;
+}
+
+.search-form {
+  position: relative;
 }
 
 .search-form:before {
@@ -861,7 +871,7 @@ a {
   position: absolute;
   display: block;
   left: 7px;
-  bottom: 2px;
+  bottom: 0;
   width: 397px;
   height: 2px;
   background-color: #000;
@@ -1234,6 +1244,7 @@ a {
 .footer-user-activity .user-activity-list {
   max-width: 600px;
   margin-right: 0;
+  margin-left: 0;
 }
 
 .footer-user-activity ul {
