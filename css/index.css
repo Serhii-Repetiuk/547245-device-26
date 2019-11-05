@@ -348,7 +348,7 @@ a {
 
 .page-main .wrapper {
   position: relative;
-  width: 1160px;
+  max-width: 1200px;
   padding: 0 82px;
 }
 
@@ -721,7 +721,7 @@ a {
 .service-footer {
   display: flex;
   flex-direction: column;
-  margin-top: 22px;
+  margin-top: 19px;
 }
 
 .services-type {
@@ -1212,7 +1212,7 @@ a {
 
 .page-footer {
   margin-top: 80px;
-  padding-top: 60px;
+  padding-top: 59px;
   color: white;
   background-color: #464646;
 }
@@ -1456,7 +1456,7 @@ a {
   font-size: 15px;
   line-height: 2;
   text-align: right;
-  margin-top: 8px;
+  margin-top: 6px;
 }
 
 .footer-contacts a {
