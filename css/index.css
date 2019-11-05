@@ -50,7 +50,6 @@ a {
   font-family: 'Gilroy', 'Arial', sans-serif;
 }
 
-
 .button {
   font-family: 'Gilroy', sans-serif;
   text-transform: uppercase;
@@ -63,7 +62,6 @@ a {
   font-weight: 800;
   display: inline-block;
   position: relative;
-
   padding: 9px 14px;
   border: none;
   z-index: 1;
@@ -72,7 +70,6 @@ a {
 .button:active span {
   opacity: 0.3;
 }
-
 
 .button:hover::before {
   height: 0;
@@ -181,12 +178,9 @@ a {
   background-color: #f8e297;
 }
 
-
 .navigation button {
   cursor: pointer;
 }
-
-
 
 .main-header-logo {
   margin-top: -23px;
@@ -415,7 +409,6 @@ a {
   transform: rotate(35deg);
 }
 
-
 .index-catalog-img1 {
   margin-top: -143px;
   margin-left: 90px;
@@ -495,7 +488,6 @@ a {
   line-height: 1.33;
   letter-spacing: 0.36px;
 }
-
 
 .detail-wrapper {
   display: flex;
@@ -643,7 +635,7 @@ a {
   font-size: 15px;
   font-weight: 300;
   line-height: 2;
-  margin-top: 0px;
+  margin-top: 0;
   color: #464646;
 }
 
@@ -705,7 +697,7 @@ a {
 
 .map-img:hover {
   cursor: pointer;
-  box-shadow: 0px 10px 20px 0 rgba(4, 6, 6, 0.2);
+  box-shadow: 0 10px 20px 0 rgba(4, 6, 6, 0.2);
   transition-duration: 0.2s;
   z-index: 2;
 }
@@ -773,7 +765,6 @@ a {
   margin-right: auto;
   margin-top: 65px;
 }
-
 
 .page-header {
   max-width: 1160px;
@@ -1076,7 +1067,6 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-
 }
 
 .delivery-image {
@@ -1288,7 +1278,6 @@ a {
 .contact-us{
   max-width: 260px;
 }
-
 
 .about-us {
   max-width: 232px;
@@ -1548,7 +1537,7 @@ a {
 .modal {
   position: fixed;
   color: #000000;
-  box-shadow: 0px 10px 20px 0 rgba(4, 6, 6, 0.2);
+  box-shadow: 0 10px 20px 0 rgba(4, 6, 6, 0.2);
   z-index: 2;
 }
 
@@ -2082,7 +2071,7 @@ a {
 }
 
 .range-controls .toggle-min {
-  left: 0px;
+  left: 0;
 }
 
 .range-controls .toggle-max {
@@ -2153,7 +2142,6 @@ a {
   align-items: center;
 }
 
-
 .sorting-list button {
   width: 100%;
   margin-left: 10px;
@@ -2177,7 +2165,6 @@ a {
   line-height: 1.29;
   color: #000000;
 }
-
 
 .updown-arrow-wrapper {
   display: flex;
@@ -2203,7 +2190,6 @@ a {
   background-color: transparent;
   opacity: 0.5;
 }
-
 
 .catalog-list-holder {
   max-width: 833px;
@@ -2237,7 +2223,6 @@ a {
   color: #464646;
 }
 
-
 .title-price-wrapper {
   display: flex;
   justify-content: space-between;
@@ -2270,7 +2255,6 @@ a {
 .catalog-item-hover:hover + img  {
   opacity: 0.7;
 }
-
 
 .add-button {
   font-family: 'Gilroy', sans-serif;
@@ -2424,7 +2408,7 @@ label {
   content: '\2714';
   position: absolute;
   font-size: 14px;
-  top: 0px;
+  top: 0;
   left: 3px;
   color: #99a1a7;
 }
