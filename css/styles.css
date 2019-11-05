@@ -2326,13 +2326,16 @@ a {
 }
 
 .pagination {
-  display: flex;
-  justify-content: space-between;
-  position: relative;
   margin-left: 71px;
   margin-right: 52px;
   margin-bottom: 77px;
   background-color: #ebebeb;
+}
+
+.pagination-inner {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
 }
 
 .pagination-wrapper {
